@@ -160,23 +160,20 @@ export default function About() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-              {/* Team Member 1 - Placeholder */}
+              {/* Team Member 1 - Ms. Nandita Mishra */}
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-32 h-32 bg-icreative-pink rounded-full mx-auto mb-4 overflow-hidden">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2F50cd460d113f444195bd8d947322c08e"
-                    alt="Teacher placeholder"
+                    alt="Ms. Nandita Mishra"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-icreative-purple font-roboto text-lg font-bold text-center mb-2">
-                  [Teacher Name]
+                  Ms. Nandita Mishra
                 </h3>
-                <p className="text-icreative-magenta font-inter text-sm font-medium text-center mb-3">
-                  [Role/Title]
-                </p>
                 <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
-                  [Teacher description and qualifications will be added here]
+                  I have done Master's degree in Psychology. I am board certified teacher working with elementary students for the last 13 years. I'm part of iCreative Learning for the last 3 years!
                 </p>
               </div>
 
