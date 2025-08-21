@@ -3,32 +3,6 @@ import { MapPin, Phone, Mail } from "lucide-react";
 export default function Footer() {
   return (
     <footer>
-      {/* CTA Section */}
-      <section className="bg-icreative-purple py-12 lg:py-16 px-6 lg:px-20">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          {/* Headline */}
-          <h2 className="text-white font-roboto text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight">
-            Ready to Start Your Child's Learning Journey?
-          </h2>
-
-          {/* Subtitle */}
-          <p className="text-white font-roboto text-base lg:text-lg max-w-3xl mx-auto">
-            Join our community of successful learners and watch your child's
-            confidence and abilities soar.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-purple-600 px-8 py-4 rounded-3xl font-roboto text-base font-medium hover:bg-gray-100 transition-colors">
-              Book Your Free Assessment
-            </button>
-            <button className="bg-white text-purple-600 px-8 py-4 rounded-3xl font-roboto text-base font-medium hover:bg-gray-100 transition-colors">
-              Pay Student Fees
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* Footer Links */}
       <section className="bg-white py-12 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto">
