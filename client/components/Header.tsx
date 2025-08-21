@@ -131,27 +131,39 @@ export default function Header() {
         <div className="border-t border-white/20 px-4 py-4 bg-white/95 backdrop-blur-md">
           {/* Mobile Navigation Links */}
           <nav className="space-y-3 mb-4">
-            <a
-              href="/"
-              className="block px-3 py-2 text-icreative-purple font-inter text-base font-medium hover:bg-icreative-purple/10 rounded-lg transition-colors"
+            <Link
+              to="/"
+              className={`block px-3 py-2 font-inter text-base font-medium hover:bg-icreative-purple/10 rounded-lg transition-colors ${
+                location.pathname === '/'
+                  ? 'text-icreative-purple'
+                  : 'text-black hover:text-icreative-purple'
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
-            </a>
-            <a
-              href="/programs"
-              className="block px-3 py-2 text-black font-inter text-base hover:bg-icreative-purple/10 hover:text-icreative-purple rounded-lg transition-colors"
+            </Link>
+            <Link
+              to="/programs"
+              className={`block px-3 py-2 font-inter text-base hover:bg-icreative-purple/10 rounded-lg transition-colors ${
+                location.pathname === '/programs'
+                  ? 'text-icreative-purple font-medium'
+                  : 'text-black hover:text-icreative-purple'
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Programs
-            </a>
-            <a
-              href="/about"
-              className="block px-3 py-2 text-black font-inter text-base hover:bg-icreative-purple/10 hover:text-icreative-purple rounded-lg transition-colors"
+            </Link>
+            <Link
+              to="/about"
+              className={`block px-3 py-2 font-inter text-base hover:bg-icreative-purple/10 rounded-lg transition-colors ${
+                location.pathname === '/about'
+                  ? 'text-icreative-purple font-medium'
+                  : 'text-black hover:text-icreative-purple'
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
-            </a>
+            </Link>
             <div className="flex items-center gap-2 px-3 py-2 text-black font-inter text-base hover:bg-icreative-purple/10 hover:text-icreative-purple rounded-lg cursor-pointer transition-colors">
               <ShoppingCart className="w-5 h-5" />
               <span>Cart</span>
