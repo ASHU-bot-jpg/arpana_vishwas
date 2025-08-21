@@ -177,23 +177,20 @@ export default function About() {
                 </p>
               </div>
 
-              {/* Team Member 2 - Placeholder */}
+              {/* Team Member 2 - Ms. Santhoshi Kumar */}
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-32 h-32 bg-icreative-pink rounded-full mx-auto mb-4 overflow-hidden">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2F8b0275fd07f24b09b0d9e4980f00203f"
-                    alt="Teacher placeholder"
+                    alt="Ms. Santhoshi Kumar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-icreative-purple font-roboto text-lg font-bold text-center mb-2">
-                  [Teacher Name]
+                  Ms. Santhoshi Kumar
                 </h3>
-                <p className="text-icreative-magenta font-inter text-sm font-medium text-center mb-3">
-                  [Role/Title]
-                </p>
                 <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
-                  [Teacher description and qualifications will be added here]
+                  A certified early childhood teacher, who is very passionate about teaching little kids. I have been a Montessori teacher for 8 years and ICreative Learning teacher for 6 years. My aim is to nurture curiosity in the young brains and turn them into great learners.
                 </p>
               </div>
 
