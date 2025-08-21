@@ -3,16 +3,16 @@ export default function Introduction() {
     <section className="relative overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px] lg:min-h-[500px]">
         {/* Text Section */}
-        <div className="bg-icreative-pink-light flex items-center py-12 lg:py-16">
-          <div className="px-6 lg:px-12 xl:px-16">
-            <p className="text-icreative-purple font-roboto text-lg lg:text-xl xl:text-2xl leading-relaxed max-w-lg">
+        <div className="bg-icreative-pink-light flex items-center py-8 lg:py-16 order-2 lg:order-1">
+          <div className="px-6 lg:px-12 xl:px-16 w-full">
+            <p className="text-icreative-purple font-roboto text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed max-w-lg">
               At iCreative Learning, we blend creativity with curriculum to make Math and English Language Arts (ELA) exciting, enriching, and empowering for elementary school kids.
             </p>
           </div>
         </div>
 
         {/* Image Section with Gradient Background */}
-        <div className="relative min-h-[300px] lg:min-h-full">
+        <div className="relative min-h-[250px] md:min-h-[300px] lg:min-h-full order-1 lg:order-2">
           {/* Gradient Background */}
           <div
             className="absolute inset-0"
@@ -22,11 +22,11 @@ export default function Introduction() {
           />
 
           {/* Innovation Elements Image */}
-          <div className="absolute inset-0 flex items-center justify-center p-4">
+          <div className="absolute inset-0 flex items-center justify-center p-3 lg:p-4">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/6cfba4bb03d8e82f57d95caee6f6c615e5ec3b14?width=1246"
               alt="Flat lay composition with innovation elements"
-              className="w-full h-full max-w-lg max-h-80 lg:max-h-full object-cover opacity-90 rounded-lg"
+              className="w-full h-full max-w-md lg:max-w-lg max-h-60 md:max-h-80 lg:max-h-full object-cover opacity-90 rounded-lg"
               style={{ filter: 'blur(1px)' }}
             />
           </div>
