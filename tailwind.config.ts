@@ -57,6 +57,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // iCreative Learning custom colors
+        'icreative': {
+          purple: '#790F8B',
+          magenta: '#8E057C',
+          'magenta-dark': '#78004D',
+          green: '#73EF7C',
+          grey: '#161616',
+          pink: '#F4F4F4',
+          'pink-light': '#FEF5FF',
+          'text-secondary': '#868686',
+          'text-tertiary': '#787878',
+          'text-light': '#A4A4A4',
+          'feature-bg': '#F0E5F3',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
