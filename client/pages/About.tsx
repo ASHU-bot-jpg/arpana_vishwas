@@ -184,7 +184,7 @@ export default function About() {
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-32 h-32 bg-icreative-pink rounded-full mx-auto mb-4 overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2F8b0275fd07f24b09b0d9e4980f00203f"
                     alt="Teacher placeholder"
                     className="w-full h-full object-cover"
                   />
