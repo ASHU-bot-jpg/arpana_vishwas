@@ -17,9 +17,12 @@ export default function Hero() {
           </p>
           
           {/* CTA Button */}
-          <button className="bg-icreative-green text-black px-8 py-4 lg:px-10 lg:py-5 rounded-3xl font-inter text-base font-bold hover:bg-green-400 transition-colors shadow-lg shadow-white/50">
+          <Link
+            to="/register"
+            className="bg-icreative-green text-black px-8 py-4 lg:px-10 lg:py-5 rounded-3xl font-inter text-base font-bold hover:bg-green-400 transition-colors shadow-lg shadow-white/50 inline-block text-center"
+          >
             Book Your Free Assessment
-          </button>
+          </Link>
         </div>
 
         {/* Right Image */}
