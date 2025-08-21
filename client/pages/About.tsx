@@ -179,7 +179,7 @@ export default function About() {
           </section>
 
           {/* Our Team Section */}
-          <section className="mb-16">
+          <section id="our-team" className="mb-16">
             <h2 className="text-icreative-purple font-roboto text-2xl lg:text-3xl font-bold mb-8 text-center">
               Meet Our Team
             </h2>
