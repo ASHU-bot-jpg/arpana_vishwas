@@ -60,24 +60,36 @@ export default function Header() {
 
         {/* Desktop Navigation Menu */}
         <nav className="hidden lg:flex items-center gap-2">
-          <a
-            href="/"
-            className="px-3 py-2 text-icreative-purple font-inter text-lg hover:text-icreative-magenta transition-colors"
+          <Link
+            to="/"
+            className={`px-3 py-2 font-inter text-lg transition-colors ${
+              location.pathname === '/'
+                ? 'text-icreative-purple'
+                : 'text-black hover:text-icreative-purple'
+            }`}
           >
             Home
-          </a>
-          <a
-            href="/programs"
-            className="px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors"
+          </Link>
+          <Link
+            to="/programs"
+            className={`px-3 py-2 font-inter text-lg transition-colors ${
+              location.pathname === '/programs'
+                ? 'text-icreative-purple'
+                : 'text-black hover:text-icreative-purple'
+            }`}
           >
             Programs
-          </a>
-          <a
-            href="/about"
-            className="px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors"
+          </Link>
+          <Link
+            to="/about"
+            className={`px-3 py-2 font-inter text-lg transition-colors ${
+              location.pathname === '/about'
+                ? 'text-icreative-purple'
+                : 'text-black hover:text-icreative-purple'
+            }`}
           >
             About
-          </a>
+          </Link>
           <div className="flex items-center gap-2 px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors cursor-pointer">
             <ShoppingCart className="w-5 h-5" />
             <span>Cart</span>
