@@ -4,16 +4,16 @@ import Footer from '../components/Footer';
 const programs = [
   {
     title: "Cognitive Math",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/9e8880e6728872eeb90a29f2dc8031f923987935?width=1100",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2F9991320143bb4a38609b0acd205800f1fecd1c14",
     features: [
       "Hands-on Math Activities",
-      "Applied math in everyday situations", 
+      "Applied math in everyday situations",
       "Logic puzzles & brainy games"
     ]
   },
   {
     title: "English Language Arts (ELA)",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/13890d4fed97c3ea42c0b64d330a63988d3580dc?width=1100",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2F3af1a4c868f7209af62fd7087a32248d4b577f3b",
     features: [
       "Creative writing and storytelling",
       "Grammar games and Vocabulary building",
@@ -22,7 +22,7 @@ const programs = [
   },
   {
     title: "Abacus",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/ad51db41265a51594088b89e3fd92d9b7ed864a9?width=1100",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2Fe529c8a3ea2bf89e529587b48791374c539f62ae",
     features: [
       "Mental Math Mastery",
       "Boosts Concentration and Memory",
@@ -31,7 +31,7 @@ const programs = [
   },
   {
     title: "CogAT",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/bc5c3d4e60c875b1002f45fd7b9f3ee52ee644e3?width=1100",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2Fd2648da984b74a3182e357486ae6e390",
     features: [
       "Sharpens Logical and Abstract Thinking",
       "Prepares for gifted and talented testing",
