@@ -1,6 +1,13 @@
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Menu, X } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <header className="bg-white/80 backdrop-blur-md border-b border-white/20 shadow-sm sticky top-0 z-50">
       <div className="flex items-center justify-between gap-4 lg:gap-8 px-4 lg:px-16 py-2 lg:py-3">
@@ -13,7 +20,7 @@ export default function Header() {
           />
         </div>
 
-        {/* Navigation Menu */}
+        {/* Desktop Navigation Menu */}
         <nav className="hidden lg:flex items-center gap-2">
           <a href="/" className="px-3 py-2 text-icreative-purple font-inter text-lg hover:text-icreative-magenta transition-colors">
             Home
@@ -30,8 +37,8 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* CTA Buttons */}
-        <div className="flex items-center gap-2 lg:gap-3">
+        {/* Desktop CTA Buttons */}
+        <div className="hidden lg:flex items-center gap-2 lg:gap-3">
           <button className="bg-icreative-green text-black px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-green-400 transition-colors whitespace-nowrap">
             Pay Fees
           </button>
@@ -39,28 +46,64 @@ export default function Header() {
             Schedule Assessment
           </button>
         </div>
+
+        {/* Mobile Hamburger Menu Button */}
+        <button
+          onClick={toggleMobileMenu}
+          className="lg:hidden p-2 text-black hover:text-icreative-purple transition-colors"
+          aria-label="Toggle mobile menu"
+        >
+          {isMobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
+        </button>
       </div>
 
-      {/* Mobile Navigation */}
-      <div className="lg:hidden border-t border-white/20 px-4 py-2 bg-white/50">
-        <div className="flex items-center justify-between">
-          <div className="flex gap-3 text-sm">
-            <a href="/" className="text-icreative-purple font-medium">Home</a>
-            <a href="/programs" className="text-black">Programs</a>
-            <a href="/about" className="text-black">About</a>
+      {/* Mobile Navigation Menu */}
+      <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+      }`}>
+        <div className="border-t border-white/20 px-4 py-4 bg-white/95 backdrop-blur-md">
+          {/* Mobile Navigation Links */}
+          <nav className="space-y-3 mb-4">
+            <a
+              href="/"
+              className="block px-3 py-2 text-icreative-purple font-inter text-base font-medium hover:bg-icreative-purple/10 rounded-lg transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              href="/programs"
+              className="block px-3 py-2 text-black font-inter text-base hover:bg-icreative-purple/10 hover:text-icreative-purple rounded-lg transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Programs
+            </a>
+            <a
+              href="/about"
+              className="block px-3 py-2 text-black font-inter text-base hover:bg-icreative-purple/10 hover:text-icreative-purple rounded-lg transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </a>
+            <div className="flex items-center gap-2 px-3 py-2 text-black font-inter text-base hover:bg-icreative-purple/10 hover:text-icreative-purple rounded-lg cursor-pointer transition-colors">
+              <ShoppingCart className="w-5 h-5" />
+              <span>Cart</span>
+            </div>
+          </nav>
+
+          {/* Mobile CTA Buttons */}
+          <div className="space-y-2 pt-2 border-t border-white/20">
+            <button className="w-full bg-icreative-green text-black px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-green-400 transition-colors">
+              Pay Fees
+            </button>
+            <button className="w-full bg-icreative-magenta text-white px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-icreative-magenta-dark transition-colors">
+              Schedule Assessment
+            </button>
           </div>
-          <div className="flex items-center gap-1 text-black text-sm">
-            <ShoppingCart className="w-4 h-4" />
-            <span>Cart</span>
-          </div>
-        </div>
-        <div className="flex gap-2 mt-2">
-          <button className="bg-icreative-green text-black px-3 py-1.5 rounded-lg font-inter text-xs font-medium">
-            Pay Fees
-          </button>
-          <button className="bg-icreative-magenta text-white px-3 py-1.5 rounded-lg font-inter text-xs font-medium">
-            Assessment
-          </button>
         </div>
       </div>
     </header>
