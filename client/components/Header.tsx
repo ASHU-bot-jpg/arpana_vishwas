@@ -90,10 +90,17 @@ export default function Header() {
           >
             About
           </Link>
-          <div className="flex items-center gap-2 px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors cursor-pointer">
+          <Link
+            to="/cart"
+            className={`flex items-center gap-2 px-3 py-2 font-inter text-lg transition-colors ${
+              location.pathname === '/cart'
+                ? 'text-icreative-purple'
+                : 'text-black hover:text-icreative-purple'
+            }`}
+          >
             <ShoppingCart className="w-5 h-5" />
             <span>Cart</span>
-          </div>
+          </Link>
         </nav>
 
         {/* Desktop CTA Buttons */}
@@ -170,10 +177,18 @@ export default function Header() {
             >
               About
             </Link>
-            <div className="flex items-center gap-2 px-3 py-2 text-black font-inter text-base hover:bg-icreative-purple/10 hover:text-icreative-purple rounded-lg cursor-pointer transition-colors">
+            <Link
+              to="/cart"
+              className={`flex items-center gap-2 px-3 py-2 font-inter text-base hover:bg-icreative-purple/10 rounded-lg transition-colors ${
+                location.pathname === '/cart'
+                  ? 'text-icreative-purple font-medium'
+                  : 'text-black hover:text-icreative-purple'
+              }`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               <ShoppingCart className="w-5 h-5" />
               <span>Cart</span>
-            </div>
+            </Link>
           </nav>
 
           {/* Mobile CTA Buttons */}
