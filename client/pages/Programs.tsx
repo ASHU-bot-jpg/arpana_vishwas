@@ -100,9 +100,12 @@ export default function Programs() {
                   
                   {/* Register Button */}
                   <div className="pt-4">
-                    <button className="bg-icreative-green text-black px-8 py-3 rounded-2xl font-inter text-lg font-bold hover:bg-green-400 transition-colors w-full sm:w-auto float-right">
+                    <Link
+                      to="/register"
+                      className="bg-icreative-green text-black px-8 py-3 rounded-2xl font-inter text-lg font-bold hover:bg-green-400 transition-colors w-full sm:w-auto float-right inline-block text-center"
+                    >
                       Register Here
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
