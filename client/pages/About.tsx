@@ -6,17 +6,51 @@ export default function About() {
     <div className="min-h-screen bg-white">
       <Header />
       
+      {/* Hero Section */}
+      <section className="relative py-16 px-6 lg:px-20 bg-gradient-to-br from-icreative-pink-light to-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Hero Content */}
+            <div className="space-y-6 order-2 lg:order-1">
+              <h1 className="text-icreative-purple font-roboto text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+                About iCreative Learning
+              </h1>
+              <p className="text-icreative-grey font-roboto text-lg lg:text-xl leading-relaxed">
+                Empowering elementary students through creative, fun, and effective learning programs backed by research, theories of learning, and cognitive psychology.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <div className="bg-icreative-green px-4 py-2 rounded-full">
+                  <span className="text-black font-inter text-sm font-medium">Research-Based</span>
+                </div>
+                <div className="bg-icreative-green px-4 py-2 rounded-full">
+                  <span className="text-black font-inter text-sm font-medium">Small Classes</span>
+                </div>
+                <div className="bg-icreative-green px-4 py-2 rounded-full">
+                  <span className="text-black font-inter text-sm font-medium">Expert Teachers</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="relative">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/7ec4d7891358269d942bd3ec0d7a90aeb0fec769?width=1021"
+                  alt="Happy children learning together at iCreative Learning"
+                  className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-3xl shadow-lg shadow-black/20"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-icreative-purple text-white p-4 rounded-2xl shadow-lg">
+                  <p className="font-inter text-sm font-bold">5+ Years</p>
+                  <p className="font-inter text-xs">of Excellence</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main className="py-16 px-6 lg:px-20">
         <div className="max-w-4xl mx-auto">
-          {/* Page Title */}
-          <div className="text-center mb-16">
-            <h1 className="text-icreative-purple font-roboto text-3xl lg:text-4xl xl:text-5xl font-bold mb-6">
-              About iCreative Learning
-            </h1>
-            <p className="text-icreative-grey font-roboto text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto">
-              Empowering elementary students through creative, fun, and effective learning programs backed by research, theories of learning, and cognitive psychology.
-            </p>
-          </div>
 
           {/* Mission Section */}
           <section className="mb-16">
