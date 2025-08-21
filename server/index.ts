@@ -20,5 +20,9 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
+  // Registration routes
+  app.post("/api/register", handleRegistration);
+  app.get("/api/export-registrations", exportRegistrations);
+
   return app;
 }
