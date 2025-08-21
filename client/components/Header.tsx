@@ -99,9 +99,12 @@ export default function Header() {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-        isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-      }`}>
+      <div
+        ref={menuRef}
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
         <div className="border-t border-white/20 px-4 py-4 bg-white/95 backdrop-blur-md">
           {/* Mobile Navigation Links */}
           <nav className="space-y-3 mb-4">
