@@ -1,4 +1,5 @@
 import { Quote, Star, Users, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const testimonials = [
   {
@@ -61,28 +62,6 @@ export default function Testimonials() {
             Discover how our programs have transformed the learning journey of hundreds of students
           </p>
           
-          {/* Social Proof Stats */}
-          <div className="flex flex-wrap justify-center gap-8 mt-10">
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-1 mb-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <p className="text-icreative-purple font-roboto text-2xl font-bold">4.9/5</p>
-              <p className="text-icreative-grey font-inter text-sm">Average Rating</p>
-            </div>
-            <div className="text-center">
-              <Users className="w-8 h-8 text-icreative-magenta mx-auto mb-2" />
-              <p className="text-icreative-purple font-roboto text-2xl font-bold">500+</p>
-              <p className="text-icreative-grey font-inter text-sm">Happy Families</p>
-            </div>
-            <div className="text-center">
-              <Heart className="w-8 h-8 text-icreative-green mx-auto mb-2" />
-              <p className="text-icreative-purple font-roboto text-2xl font-bold">98%</p>
-              <p className="text-icreative-grey font-inter text-sm">Satisfaction Rate</p>
-            </div>
-          </div>
         </div>
 
         {/* Testimonials Grid */}
@@ -162,12 +141,18 @@ export default function Testimonials() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-icreative-purple px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <Link
+                to="/register"
+                className="bg-white text-icreative-purple px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
                 Schedule Free Assessment
-              </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-white hover:text-icreative-purple transition-all duration-300">
-                Read More Reviews
-              </button>
+              </Link>
+              <Link
+                to="/cart"
+                className="border-2 border-white text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-white hover:text-icreative-purple transition-all duration-300"
+              >
+                Pay Fees
+              </Link>
             </div>
           </div>
         </div>

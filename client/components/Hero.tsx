@@ -37,30 +37,6 @@ export default function Hero() {
             Backed by Research, Theories of Learning, and Cognitive Psychology.
           </p>
           
-          {/* Stats Row */}
-          <div className="flex flex-wrap gap-6 lg:gap-8 text-center lg:text-left">
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-icreative-magenta" />
-                <span className="text-2xl font-bold text-icreative-purple font-roboto">500+</span>
-              </div>
-              <p className="text-icreative-grey font-inter text-sm">Happy Students</p>
-            </div>
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-icreative-green" />
-                <span className="text-2xl font-bold text-icreative-purple font-roboto">5+</span>
-              </div>
-              <p className="text-icreative-grey font-inter text-sm">Years Experience</p>
-            </div>
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-icreative-magenta" />
-                <span className="text-2xl font-bold text-icreative-purple font-roboto">98%</span>
-              </div>
-              <p className="text-icreative-grey font-inter text-sm">Success Rate</p>
-            </div>
-          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
