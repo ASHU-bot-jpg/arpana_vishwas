@@ -154,6 +154,133 @@ export default function About() {
             </div>
           </section>
 
+          {/* Our Team Section */}
+          <section className="mb-16">
+            <h2 className="text-icreative-purple font-roboto text-2xl lg:text-3xl font-bold mb-8 text-center">
+              Meet Our Team
+            </h2>
+            <p className="text-icreative-grey font-roboto text-base lg:text-lg leading-relaxed mb-12 text-center max-w-2xl mx-auto">
+              Our passionate educators are dedicated to nurturing young minds and helping students reach their full potential through innovative teaching methods.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              {/* Team Member 1 - Placeholder */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-32 h-32 bg-icreative-pink rounded-full mx-auto mb-4 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                    alt="Teacher placeholder"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-icreative-purple font-roboto text-lg font-bold text-center mb-2">
+                  [Teacher Name]
+                </h3>
+                <p className="text-icreative-magenta font-inter text-sm font-medium text-center mb-3">
+                  [Role/Title]
+                </p>
+                <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
+                  [Teacher description and qualifications will be added here]
+                </p>
+              </div>
+
+              {/* Team Member 2 - Placeholder */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-32 h-32 bg-icreative-pink rounded-full mx-auto mb-4 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+                    alt="Teacher placeholder"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-icreative-purple font-roboto text-lg font-bold text-center mb-2">
+                  [Teacher Name]
+                </h3>
+                <p className="text-icreative-magenta font-inter text-sm font-medium text-center mb-3">
+                  [Role/Title]
+                </p>
+                <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
+                  [Teacher description and qualifications will be added here]
+                </p>
+              </div>
+
+              {/* Team Member 3 - Placeholder */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-32 h-32 bg-icreative-pink rounded-full mx-auto mb-4 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+                    alt="Teacher placeholder"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-icreative-purple font-roboto text-lg font-bold text-center mb-2">
+                  [Teacher Name]
+                </h3>
+                <p className="text-icreative-magenta font-inter text-sm font-medium text-center mb-3">
+                  [Role/Title]
+                </p>
+                <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
+                  [Teacher description and qualifications will be added here]
+                </p>
+              </div>
+            </div>
+
+            {/* Roles and Responsibilities */}
+            <div className="bg-icreative-pink-light p-8 rounded-2xl">
+              <h3 className="text-icreative-purple font-roboto text-xl lg:text-2xl font-bold mb-6 text-center">
+                Our Teaching Philosophy & Responsibilities
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <h4 className="text-icreative-purple font-roboto text-lg font-bold">
+                    Our Educators Are Responsible For:
+                  </h4>
+                  <ul className="space-y-2 text-icreative-grey font-roboto text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-icreative-green font-bold">•</span>
+                      Creating engaging and interactive learning experiences
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-icreative-green font-bold">•</span>
+                      Monitoring individual student progress and adaptation
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-icreative-green font-bold">•</span>
+                      Maintaining small class sizes for personalized attention
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-icreative-green font-bold">•</span>
+                      Regular communication with parents about student development
+                    </li>
+                  </ul>
+                </div>
+                <div className="space-y-4">
+                  <h4 className="text-icreative-purple font-roboto text-lg font-bold">
+                    Teaching Methods & Approach:
+                  </h4>
+                  <ul className="space-y-2 text-icreative-grey font-roboto text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-icreative-green font-bold">•</span>
+                      Research-based cognitive development techniques
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-icreative-green font-bold">•</span>
+                      Creative and fun learning methodologies
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-icreative-green font-bold">•</span>
+                      Positive reinforcement and encouragement
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-icreative-green font-bold">•</span>
+                      Building confidence through achievement milestones
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Contact CTA */}
           <section className="text-center bg-icreative-pink-light p-8 rounded-2xl">
             <h2 className="text-icreative-purple font-roboto text-2xl lg:text-3xl font-bold mb-4">
