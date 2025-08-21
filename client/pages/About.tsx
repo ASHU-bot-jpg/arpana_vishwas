@@ -194,23 +194,20 @@ export default function About() {
                 </p>
               </div>
 
-              {/* Team Member 3 - Placeholder */}
+              {/* Team Member 3 - Ms. Bhagya */}
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-32 h-32 bg-icreative-pink rounded-full mx-auto mb-4 overflow-hidden">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2F4581441d34fa44e18bbcc89adbb93d62"
-                    alt="Teacher placeholder"
+                    alt="Ms. Bhagya"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-icreative-purple font-roboto text-lg font-bold text-center mb-2">
-                  [Teacher Name]
+                  Ms. Bhagya
                 </h3>
-                <p className="text-icreative-magenta font-inter text-sm font-medium text-center mb-3">
-                  [Role/Title]
-                </p>
                 <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
-                  [Teacher description and qualifications will be added here]
+                  With a Diploma in Elementary Teacher Education, I am a board certified Elementary Teacher. I have been working as a Mathematics teacher for Middle School students at the Public School for the past three years and have been part of iCreative Learning for the past year.
                 </p>
               </div>
             </div>
