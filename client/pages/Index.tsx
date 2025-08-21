@@ -8,9 +8,9 @@ import Footer from '../components/Footer';
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30">
       <Header />
-      <main>
+      <main className="scroll-smooth">
         <Hero />
         <Introduction />
         <CoreOfferings />
