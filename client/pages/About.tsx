@@ -35,14 +35,10 @@ export default function About() {
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
               <div className="relative">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/7ec4d7891358269d942bd3ec0d7a90aeb0fec769?width=1021"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2F207fa1fe890448b0bab08c6c477ca4cd"
                   alt="Happy children learning together at iCreative Learning"
                   className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-3xl shadow-lg shadow-black/20"
                 />
-                <div className="absolute -bottom-4 -right-4 bg-icreative-purple text-white p-4 rounded-2xl shadow-lg">
-                  <p className="font-inter text-sm font-bold">5+ Years</p>
-                  <p className="font-inter text-xs">of Excellence</p>
-                </div>
               </div>
             </div>
           </div>
