@@ -1,5 +1,5 @@
-import { ShoppingCart, Menu, X } from 'lucide-react';
-import { useState, useEffect, useRef } from 'react';
+import { ShoppingCart, Menu, X } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,11 +24,11 @@ export default function Header() {
     };
 
     if (isMobileMenuOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMobileMenuOpen]);
 
@@ -40,8 +40,8 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -58,13 +58,22 @@ export default function Header() {
 
         {/* Desktop Navigation Menu */}
         <nav className="hidden lg:flex items-center gap-2">
-          <a href="/" className="px-3 py-2 text-icreative-purple font-inter text-lg hover:text-icreative-magenta transition-colors">
+          <a
+            href="/"
+            className="px-3 py-2 text-icreative-purple font-inter text-lg hover:text-icreative-magenta transition-colors"
+          >
             Home
           </a>
-          <a href="/programs" className="px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors">
+          <a
+            href="/programs"
+            className="px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors"
+          >
             Programs
           </a>
-          <a href="/about" className="px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors">
+          <a
+            href="/about"
+            className="px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors"
+          >
             About
           </a>
           <div className="flex items-center gap-2 px-3 py-2 text-black font-inter text-lg hover:text-icreative-purple transition-colors cursor-pointer">
@@ -102,7 +111,7 @@ export default function Header() {
       <div
         ref={menuRef}
         className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="border-t border-white/20 px-4 py-4 bg-white/95 backdrop-blur-md">
