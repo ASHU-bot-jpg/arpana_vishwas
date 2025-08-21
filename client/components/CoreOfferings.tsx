@@ -60,10 +60,13 @@ export default function CoreOfferings() {
 
           {/* Browse More Button */}
           <div className="flex justify-center">
-            <button className="bg-icreative-green text-black px-6 py-3 rounded-3xl font-inter text-base font-bold flex items-center gap-2 hover:bg-green-400 transition-colors shadow-lg shadow-white/50">
-              Browse more
+            <Link
+              to="/register"
+              className="bg-icreative-green text-black px-6 py-3 rounded-3xl font-inter text-base font-bold flex items-center gap-2 hover:bg-green-400 transition-colors shadow-lg shadow-white/50"
+            >
+              Register Now
               <ChevronRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
