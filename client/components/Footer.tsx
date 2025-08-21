@@ -76,12 +76,6 @@ export default function Footer() {
                 <a href="#" className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors">
                   Testimonials
                 </a>
-                <a href="#" className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors">
-                  Blog
-                </a>
-                <a href="#" className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors">
-                  FAQ
-                </a>
               </div>
             </div>
 
