@@ -157,12 +157,14 @@ export default function Testimonials() {
               >
                 Schedule Free Assessment
               </Link>
-              <Link
-                to="/cart"
+              <a
+                href="https://your-woocommerce-site.com/checkout"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border-2 border-white text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-white hover:text-icreative-purple transition-all duration-300"
               >
                 Pay Fees
-              </Link>
+              </a>
             </div>
           </div>
         </div>
