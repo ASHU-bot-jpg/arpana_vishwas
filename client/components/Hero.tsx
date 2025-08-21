@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section className="px-6 lg:px-20 py-8 lg:py-12 pt-6 lg:pt-8">
