@@ -41,10 +41,10 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation - TODO: Can be expanded later for mobile menu */}
-      <div className="lg:hidden border-t border-gray-100 px-4 py-2">
+      {/* Mobile Navigation */}
+      <div className="lg:hidden border-t border-white/20 px-4 py-2 bg-white/50">
         <div className="flex items-center justify-between">
-          <div className="flex gap-4 text-sm">
+          <div className="flex gap-3 text-sm">
             <a href="/" className="text-icreative-purple font-medium">Home</a>
             <a href="/programs" className="text-black">Programs</a>
             <a href="/about" className="text-black">About</a>
@@ -53,6 +53,14 @@ export default function Header() {
             <ShoppingCart className="w-4 h-4" />
             <span>Cart</span>
           </div>
+        </div>
+        <div className="flex gap-2 mt-2">
+          <button className="bg-icreative-green text-black px-3 py-1.5 rounded-lg font-inter text-xs font-medium">
+            Pay Fees
+          </button>
+          <button className="bg-icreative-magenta text-white px-3 py-1.5 rounded-lg font-inter text-xs font-medium">
+            Assessment
+          </button>
         </div>
       </div>
     </header>
