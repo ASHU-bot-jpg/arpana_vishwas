@@ -24,7 +24,7 @@ export default function Introduction() {
           {/* Innovation Elements Image */}
           <div className="absolute inset-0 flex items-center justify-center p-3 lg:p-4">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/6cfba4bb03d8e82f57d95caee6f6c615e5ec3b14?width=1246"
+              src="https://cdn.builder.io/api/v1/image/assets%2F4dea029619d64c5c95c3070ae0fffe0b%2F8aa4cf09caeb4e58bde5caf7b6aa17fa"
               alt="Flat lay composition with innovation elements"
               className="w-full h-full max-w-md lg:max-w-lg max-h-60 md:max-h-80 lg:max-h-full object-cover opacity-90 rounded-lg"
               style={{ filter: 'blur(1px)' }}
