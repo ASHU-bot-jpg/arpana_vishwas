@@ -11,6 +11,7 @@ import Programs from "./pages/Programs";
 import About from "./pages/About";
 import Registration from "./pages/Registration";
 import Cart from "./pages/Cart";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
