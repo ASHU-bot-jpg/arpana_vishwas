@@ -85,6 +85,7 @@ export default function Header() {
 
         {/* Mobile Hamburger Menu Button */}
         <button
+          ref={buttonRef}
           onClick={toggleMobileMenu}
           className="lg:hidden p-2 text-black hover:text-icreative-purple transition-colors"
           aria-label="Toggle mobile menu"
