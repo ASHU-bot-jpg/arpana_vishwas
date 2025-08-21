@@ -277,9 +277,12 @@ export default function About() {
             <p className="text-icreative-grey font-roboto text-base lg:text-lg leading-relaxed mb-6">
               Join our community of successful learners and watch your child's confidence and abilities soar.
             </p>
-            <button className="bg-icreative-green text-black px-8 py-4 rounded-3xl font-inter text-base font-bold hover:bg-green-400 transition-colors">
+            <Link
+              to="/register"
+              className="bg-icreative-green text-black px-8 py-4 rounded-3xl font-inter text-base font-bold hover:bg-green-400 transition-colors inline-block"
+            >
               Book Your Free Assessment
-            </button>
+            </Link>
           </section>
         </div>
       </main>
