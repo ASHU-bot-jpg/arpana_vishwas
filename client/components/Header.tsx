@@ -98,12 +98,18 @@ export default function Header() {
 
         {/* Desktop CTA Buttons */}
         <div className="hidden lg:flex items-center gap-2 lg:gap-3">
-          <button className="bg-icreative-green text-black px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-green-400 transition-colors whitespace-nowrap">
+          <Link
+            to="/cart"
+            className="bg-icreative-green text-black px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-green-400 transition-colors whitespace-nowrap"
+          >
             Pay Fees
-          </button>
-          <button className="bg-icreative-magenta text-white px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-icreative-magenta-dark transition-colors whitespace-nowrap">
+          </Link>
+          <Link
+            to="/register"
+            className="bg-icreative-magenta text-white px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-icreative-magenta-dark transition-colors whitespace-nowrap"
+          >
             Schedule Assessment
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Menu Button */}
