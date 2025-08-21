@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 interface FormData {
   childName: string;
@@ -14,45 +14,47 @@ interface FormData {
 }
 
 const programs = [
-  { id: 'abacus', name: 'Abacus Arithmetic (Grades 1-5)', price: 150 },
-  { id: 'language-arts', name: 'Language Arts (Grades 1-5)', price: 180 },
-  { id: 'math', name: 'Math Program (Grades 1-5)', price: 160 }
+  { id: "abacus", name: "Abacus Arithmetic (Grades 1-5)", price: 150 },
+  { id: "language-arts", name: "Language Arts (Grades 1-5)", price: 180 },
+  { id: "math", name: "Math Program (Grades 1-5)", price: 160 },
 ];
 
 const hearAboutOptions = [
-  'Google Search',
-  'Social Media',
-  'Friend/Family Referral',
-  'School Recommendation',
-  'Advertisement',
-  'Other'
+  "Google Search",
+  "Social Media",
+  "Friend/Family Referral",
+  "School Recommendation",
+  "Advertisement",
+  "Other",
 ];
 
 export default function Registration() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState<FormData>({
-    childName: '',
-    phoneNumber: '',
-    emailAddress: '',
-    parentName: '',
-    childGrade: '',
+    childName: "",
+    phoneNumber: "",
+    emailAddress: "",
+    parentName: "",
+    childGrade: "",
     selectedPrograms: [],
-    hearAboutUs: ''
+    hearAboutUs: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleProgramChange = (programId: string) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       selectedPrograms: prev.selectedPrograms.includes(programId)
-        ? prev.selectedPrograms.filter(id => id !== programId)
-        : [...prev.selectedPrograms, programId]
+        ? prev.selectedPrograms.filter((id) => id !== programId)
+        : [...prev.selectedPrograms, programId],
     }));
   };
 
@@ -62,42 +64,49 @@ export default function Registration() {
 
     try {
       // Submit form data to your backend
-      const response = await fetch('/api/register', {
-        method: 'POST',
+      const response = await fetch("/api/register", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         // Add selected programs to cart
-        const selectedProgramDetails = programs.filter(program => 
-          formData.selectedPrograms.includes(program.id)
+        const selectedProgramDetails = programs.filter((program) =>
+          formData.selectedPrograms.includes(program.id),
         );
-        
+
         // Store cart items in localStorage for now
-        localStorage.setItem('cartItems', JSON.stringify(selectedProgramDetails));
-        
-        alert('Registration successful! Your selected programs have been added to cart.');
-        
+        localStorage.setItem(
+          "cartItems",
+          JSON.stringify(selectedProgramDetails),
+        );
+
+        alert(
+          "Registration successful! Your selected programs have been added to cart.",
+        );
+
         // Redirect to cart or confirmation page
-        navigate('/cart');
+        navigate("/cart");
       } else {
-        throw new Error('Registration failed');
+        throw new Error("Registration failed");
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('There was an error submitting your registration. Please try again.');
+      console.error("Error submitting form:", error);
+      alert(
+        "There was an error submitting your registration. Please try again.",
+      );
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <div className="min-h-screen" style={{ background: '#F0E2F2' }}>
+    <div className="min-h-screen" style={{ background: "#F0E2F2" }}>
       <Header />
-      
+
       <main className="py-8 px-6">
         <div className="max-w-4xl mx-auto">
           {/* Page Title */}
@@ -106,7 +115,8 @@ export default function Registration() {
               Registration
             </h1>
             <p className="text-black font-roboto text-lg lg:text-2xl max-w-4xl mx-auto">
-              Register here to receive iCreative Learning Program Curriculum and Demo Class
+              Register here to receive iCreative Learning Program Curriculum and
+              Demo Class
             </p>
           </div>
 
@@ -114,7 +124,10 @@ export default function Registration() {
           <form onSubmit={handleSubmit} className="space-y-6 bg-transparent">
             {/* Child's Name */}
             <div className="space-y-2">
-              <label htmlFor="childName" className="block text-black font-roboto text-xl lg:text-2xl">
+              <label
+                htmlFor="childName"
+                className="block text-black font-roboto text-xl lg:text-2xl"
+              >
                 Child's Name?
               </label>
               <input
@@ -131,7 +144,10 @@ export default function Registration() {
 
             {/* Phone Number */}
             <div className="space-y-2">
-              <label htmlFor="phoneNumber" className="block text-black font-roboto text-xl lg:text-2xl">
+              <label
+                htmlFor="phoneNumber"
+                className="block text-black font-roboto text-xl lg:text-2xl"
+              >
                 Phone Number
               </label>
               <input
@@ -148,7 +164,10 @@ export default function Registration() {
 
             {/* Email Address */}
             <div className="space-y-2">
-              <label htmlFor="emailAddress" className="block text-black font-roboto text-xl lg:text-2xl">
+              <label
+                htmlFor="emailAddress"
+                className="block text-black font-roboto text-xl lg:text-2xl"
+              >
                 Email Address
               </label>
               <input
@@ -165,7 +184,10 @@ export default function Registration() {
 
             {/* Parent's Full Name */}
             <div className="space-y-2">
-              <label htmlFor="parentName" className="block text-black font-roboto text-xl lg:text-2xl">
+              <label
+                htmlFor="parentName"
+                className="block text-black font-roboto text-xl lg:text-2xl"
+              >
                 Parent's Full Name
               </label>
               <input
@@ -182,7 +204,10 @@ export default function Registration() {
 
             {/* Child's Grade */}
             <div className="space-y-2">
-              <label htmlFor="childGrade" className="block text-black font-roboto text-xl lg:text-2xl">
+              <label
+                htmlFor="childGrade"
+                className="block text-black font-roboto text-xl lg:text-2xl"
+              >
                 Child's Grade?
               </label>
               <input
@@ -204,7 +229,10 @@ export default function Registration() {
               </h3>
               <div className="space-y-3">
                 {programs.map((program) => (
-                  <label key={program.id} className="flex items-center gap-3 cursor-pointer">
+                  <label
+                    key={program.id}
+                    className="flex items-center gap-3 cursor-pointer"
+                  >
                     <input
                       type="checkbox"
                       checked={formData.selectedPrograms.includes(program.id)}
@@ -221,7 +249,10 @@ export default function Registration() {
 
             {/* How Did You Hear About Us */}
             <div className="space-y-2">
-              <label htmlFor="hearAboutUs" className="block text-black font-roboto text-xl lg:text-2xl">
+              <label
+                htmlFor="hearAboutUs"
+                className="block text-black font-roboto text-xl lg:text-2xl"
+              >
                 How Did you hear about us?
               </label>
               <select
@@ -244,7 +275,8 @@ export default function Registration() {
             {/* Privacy Notice */}
             <div className="bg-white/20 p-6 rounded-lg">
               <p className="text-black font-roboto text-lg lg:text-xl leading-relaxed">
-                By submitting your information, you're giving us permission to email you. You may unsubscribe at any time.
+                By submitting your information, you're giving us permission to
+                email you. You may unsubscribe at any time.
               </p>
             </div>
 
@@ -255,7 +287,7 @@ export default function Registration() {
                 disabled={isSubmitting}
                 className="bg-icreative-green text-black px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-green-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Registering...' : 'Register'}
+                {isSubmitting ? "Registering..." : "Register"}
               </button>
             </div>
           </form>

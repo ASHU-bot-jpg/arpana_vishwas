@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { ArrowRight, Sparkles, Users, Award } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { ArrowRight, Sparkles, Users, Award } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -7,37 +7,38 @@ export default function Hero() {
       {/* Background Decorative Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-icreative-green/20 to-icreative-magenta/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-icreative-purple/20 to-icreative-pink/30 rounded-full blur-3xl animate-pulse delay-1000" />
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto relative z-10">
         {/* Left Content */}
         <div className="space-y-8 lg:space-y-10 order-2 lg:order-1">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-icreative-purple/10 to-icreative-magenta/10 border border-icreative-purple/20 px-4 py-2 rounded-full">
             <Sparkles className="w-4 h-4 text-icreative-magenta" />
-            <span className="text-icreative-purple font-inter text-sm font-medium">Research-Based Learning Programs</span>
+            <span className="text-icreative-purple font-inter text-sm font-medium">
+              Research-Based Learning Programs
+            </span>
             <Award className="w-4 h-4 text-icreative-green" />
           </div>
-          
+
           {/* Main Headline with Gradient */}
           <div className="space-y-4">
             <h1 className="text-icreative-purple font-roboto text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
-              Empowering Elementary Students Through{' '}
+              Empowering Elementary Students Through{" "}
               <span className="bg-gradient-to-r from-icreative-magenta to-icreative-purple bg-clip-text text-transparent">
                 Creative, Fun, and Effective
-              </span>{' '}
+              </span>{" "}
               Learning Programs.
             </h1>
-            
+
             {/* Animated Underline */}
             <div className="w-24 h-1 bg-gradient-to-r from-icreative-green to-icreative-magenta rounded-full animate-pulse" />
           </div>
-          
+
           {/* Subheadline */}
           <p className="text-icreative-grey font-roboto text-lg lg:text-xl xl:text-2xl leading-relaxed">
             Backed by Research, Theories of Learning, and Cognitive Psychology.
           </p>
-          
-          
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link
@@ -62,18 +63,20 @@ export default function Hero() {
           <div className="relative group">
             {/* Decorative Frame */}
             <div className="absolute -inset-4 bg-gradient-to-r from-icreative-green via-icreative-magenta to-icreative-purple rounded-3xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
-            
+
             {/* Main Image */}
             <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
-              <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/7ec4d7891358269d942bd3ec0d7a90aeb0fec769?width=1021" 
-                alt="Smiley kids in the main plan" 
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/7ec4d7891358269d942bd3ec0d7a90aeb0fec769?width=1021"
+                alt="Smiley kids in the main plan"
                 className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl transition-transform duration-500 group-hover:scale-105"
               />
-              
+
               {/* Floating Badge */}
               <div className="absolute -top-2 -right-2 bg-gradient-to-r from-icreative-magenta to-icreative-purple text-white px-4 py-2 rounded-2xl shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                <span className="font-inter text-sm font-bold">✨ Free Assessment</span>
+                <span className="font-inter text-sm font-bold">
+                  ✨ Free Assessment
+                </span>
               </div>
             </div>
           </div>

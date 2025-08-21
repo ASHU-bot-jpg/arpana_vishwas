@@ -1,12 +1,12 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative py-16 px-6 lg:px-20 bg-gradient-to-br from-icreative-pink-light to-white">
         <div className="max-w-7xl mx-auto">
@@ -17,17 +17,25 @@ export default function About() {
                 About iCreative Learning
               </h1>
               <p className="text-icreative-grey font-roboto text-lg lg:text-xl leading-relaxed">
-                Empowering elementary students through creative, fun, and effective learning programs backed by research, theories of learning, and cognitive psychology.
+                Empowering elementary students through creative, fun, and
+                effective learning programs backed by research, theories of
+                learning, and cognitive psychology.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="bg-icreative-green px-4 py-2 rounded-full">
-                  <span className="text-black font-inter text-sm font-medium">Research-Based</span>
+                  <span className="text-black font-inter text-sm font-medium">
+                    Research-Based
+                  </span>
                 </div>
                 <div className="bg-icreative-green px-4 py-2 rounded-full">
-                  <span className="text-black font-inter text-sm font-medium">Small Classes</span>
+                  <span className="text-black font-inter text-sm font-medium">
+                    Small Classes
+                  </span>
                 </div>
                 <div className="bg-icreative-green px-4 py-2 rounded-full">
-                  <span className="text-black font-inter text-sm font-medium">Expert Teachers</span>
+                  <span className="text-black font-inter text-sm font-medium">
+                    Expert Teachers
+                  </span>
                 </div>
               </div>
             </div>
@@ -48,17 +56,25 @@ export default function About() {
 
       <main className="py-16 px-6 lg:px-20">
         <div className="max-w-4xl mx-auto">
-
           {/* Mission Section */}
           <section className="mb-16">
             <h2 className="text-icreative-purple font-roboto text-2xl lg:text-3xl font-bold mb-6">
               Our Mission
             </h2>
             <p className="text-icreative-grey font-roboto text-base lg:text-lg leading-relaxed mb-4">
-              At iCreative Learning, we believe that every child has the potential to excel academically while developing critical thinking skills that will serve them throughout their lives. Our mission is to blend creativity with curriculum to make Math and English Language Arts (ELA) exciting, enriching, and empowering for elementary school kids.
+              At iCreative Learning, we believe that every child has the
+              potential to excel academically while developing critical thinking
+              skills that will serve them throughout their lives. Our mission is
+              to blend creativity with curriculum to make Math and English
+              Language Arts (ELA) exciting, enriching, and empowering for
+              elementary school kids.
             </p>
             <p className="text-icreative-grey font-roboto text-base lg:text-lg leading-relaxed">
-              We don't just teach subjects—we develop minds. Every session is designed to strengthen memory, attention, logical reasoning, critical thinking, and problem-solving skills. These core cognitive abilities are essential for lifelong learning and academic success.
+              We don't just teach subjects—we develop minds. Every session is
+              designed to strengthen memory, attention, logical reasoning,
+              critical thinking, and problem-solving skills. These core
+              cognitive abilities are essential for lifelong learning and
+              academic success.
             </p>
           </section>
 
@@ -73,7 +89,9 @@ export default function About() {
                   Research-Based Methods
                 </h3>
                 <p className="text-icreative-grey font-roboto text-base leading-relaxed">
-                  Our programs are grounded in educational research, learning theories, and cognitive psychology to ensure effective and lasting results.
+                  Our programs are grounded in educational research, learning
+                  theories, and cognitive psychology to ensure effective and
+                  lasting results.
                 </p>
               </div>
               <div className="bg-icreative-pink-light p-6 rounded-2xl">
@@ -81,7 +99,9 @@ export default function About() {
                   Creative Learning
                 </h3>
                 <p className="text-icreative-grey font-roboto text-base leading-relaxed">
-                  We combine academic advancement with cognitive training and creativity, so students learn more, retain more, and enjoy the process.
+                  We combine academic advancement with cognitive training and
+                  creativity, so students learn more, retain more, and enjoy the
+                  process.
                 </p>
               </div>
               <div className="bg-icreative-pink-light p-6 rounded-2xl">
@@ -89,7 +109,8 @@ export default function About() {
                   Small Group Classes
                 </h3>
                 <p className="text-icreative-grey font-roboto text-base leading-relaxed">
-                  We keep our class sizes small to give every child the personal attention they deserve and ensure optimal learning outcomes.
+                  We keep our class sizes small to give every child the personal
+                  attention they deserve and ensure optimal learning outcomes.
                 </p>
               </div>
               <div className="bg-icreative-pink-light p-6 rounded-2xl">
@@ -97,7 +118,8 @@ export default function About() {
                   Experienced Educators
                 </h3>
                 <p className="text-icreative-grey font-roboto text-base leading-relaxed">
-                  Our teachers are passionate about making a difference and use gentle, encouraging methods to build confidence.
+                  Our teachers are passionate about making a difference and use
+                  gentle, encouraging methods to build confidence.
                 </p>
               </div>
             </div>
@@ -118,7 +140,9 @@ export default function About() {
                     Advanced Curriculum
                   </h4>
                   <p className="text-icreative-grey font-roboto text-base leading-relaxed">
-                    Our Math and ELA programs teach concepts that are one to two grade levels ahead of public school curriculum—keeping students challenged, motivated, and confident.
+                    Our Math and ELA programs teach concepts that are one to two
+                    grade levels ahead of public school curriculum—keeping
+                    students challenged, motivated, and confident.
                   </p>
                 </div>
               </div>
@@ -131,7 +155,8 @@ export default function About() {
                     Proven Results
                   </h4>
                   <p className="text-icreative-grey font-roboto text-base leading-relaxed">
-                    Parents see improved problem-solving skills, vocabulary, reading comprehension, and math confidence within weeks.
+                    Parents see improved problem-solving skills, vocabulary,
+                    reading comprehension, and math confidence within weeks.
                   </p>
                 </div>
               </div>
@@ -144,7 +169,9 @@ export default function About() {
                     Cognitive Development Focus
                   </h4>
                   <p className="text-icreative-grey font-roboto text-base leading-relaxed">
-                    We strengthen core cognitive abilities including memory, attention, logical reasoning, critical thinking, and problem-solving skills.
+                    We strengthen core cognitive abilities including memory,
+                    attention, logical reasoning, critical thinking, and
+                    problem-solving skills.
                   </p>
                 </div>
               </div>
@@ -157,7 +184,9 @@ export default function About() {
               Meet Our Team
             </h2>
             <p className="text-icreative-grey font-roboto text-base lg:text-lg leading-relaxed mb-12 text-center max-w-2xl mx-auto">
-              Our passionate educators are dedicated to nurturing young minds and helping students reach their full potential through innovative teaching methods.
+              Our passionate educators are dedicated to nurturing young minds
+              and helping students reach their full potential through innovative
+              teaching methods.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -174,7 +203,10 @@ export default function About() {
                   Ms. Nandita Mishra
                 </h3>
                 <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
-                  I have done Master's degree in Psychology. I am board certified teacher working with elementary students for the last 13 years. I'm part of iCreative Learning for the last 3 years!
+                  I have done Master's degree in Psychology. I am board
+                  certified teacher working with elementary students for the
+                  last 13 years. I'm part of iCreative Learning for the last 3
+                  years!
                 </p>
               </div>
 
@@ -191,7 +223,11 @@ export default function About() {
                   Ms. Santhoshi Kumar
                 </h3>
                 <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
-                  A certified early childhood teacher, who is very passionate about teaching little kids. I have been a Montessori teacher for 8 years and ICreative Learning teacher for 6 years. My aim is to nurture curiosity in the young brains and turn them into great learners.
+                  A certified early childhood teacher, who is very passionate
+                  about teaching little kids. I have been a Montessori teacher
+                  for 8 years and ICreative Learning teacher for 6 years. My aim
+                  is to nurture curiosity in the young brains and turn them into
+                  great learners.
                 </p>
               </div>
 
@@ -208,7 +244,11 @@ export default function About() {
                   Ms. Bhagya
                 </h3>
                 <p className="text-icreative-grey font-roboto text-sm leading-relaxed text-center">
-                  With a Diploma in Elementary Teacher Education, I am a board certified Elementary Teacher. I have been working as a Mathematics teacher for Middle School students at the Public School for the past three years and have been part of iCreative Learning for the past year.
+                  With a Diploma in Elementary Teacher Education, I am a board
+                  certified Elementary Teacher. I have been working as a
+                  Mathematics teacher for Middle School students at the Public
+                  School for the past three years and have been part of
+                  iCreative Learning for the past year.
                 </p>
               </div>
             </div>
@@ -238,7 +278,8 @@ export default function About() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-icreative-green font-bold">•</span>
-                      Regular communication with parents about student development
+                      Regular communication with parents about student
+                      development
                     </li>
                   </ul>
                 </div>
@@ -275,7 +316,8 @@ export default function About() {
               Ready to Get Started?
             </h2>
             <p className="text-icreative-grey font-roboto text-base lg:text-lg leading-relaxed mb-6">
-              Join our community of successful learners and watch your child's confidence and abilities soar.
+              Join our community of successful learners and watch your child's
+              confidence and abilities soar.
             </p>
             <Link
               to="/register"

@@ -1,16 +1,22 @@
-import { Sparkles, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Sparkles, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Introduction() {
   return (
     <section className="relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-20 h-20 border-2 border-icreative-purple rounded-full animate-spin" style={{ animationDuration: '20s' }} />
-        <div className="absolute bottom-10 right-10 w-16 h-16 border-2 border-icreative-magenta rounded-full animate-spin" style={{ animationDuration: '15s' }} />
+        <div
+          className="absolute top-10 left-10 w-20 h-20 border-2 border-icreative-purple rounded-full animate-spin"
+          style={{ animationDuration: "20s" }}
+        />
+        <div
+          className="absolute bottom-10 right-10 w-16 h-16 border-2 border-icreative-magenta rounded-full animate-spin"
+          style={{ animationDuration: "15s" }}
+        />
         <div className="absolute top-1/2 left-1/4 w-12 h-12 border border-icreative-green rounded-full animate-pulse" />
       </div>
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] lg:min-h-[600px] relative z-10">
         {/* Text Section */}
         <div className="bg-gradient-to-br from-icreative-pink-light to-purple-50/50 flex items-center py-12 lg:py-20 order-2 lg:order-1 relative">
@@ -21,35 +27,37 @@ export default function Introduction() {
           <div className="absolute bottom-8 left-8 opacity-20">
             <div className="w-6 h-6 bg-icreative-green rounded-full animate-bounce" />
           </div>
-          
+
           <div className="px-8 lg:px-16 xl:px-20 w-full max-w-2xl mx-auto lg:mx-0">
             {/* Section Badge */}
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-icreative-purple/20 px-4 py-2 rounded-full mb-6">
               <div className="w-2 h-2 bg-icreative-magenta rounded-full animate-pulse" />
-              <span className="text-icreative-purple font-inter text-sm font-medium">Our Mission</span>
+              <span className="text-icreative-purple font-inter text-sm font-medium">
+                Our Mission
+              </span>
             </div>
-            
+
             {/* Main Content */}
             <div className="space-y-6">
               <h2 className="text-icreative-purple font-roboto text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight">
-                Blending Creativity with{' '}
+                Blending Creativity with{" "}
                 <span className="bg-gradient-to-r from-icreative-magenta to-icreative-purple bg-clip-text text-transparent">
                   Curriculum
                 </span>
               </h2>
-              
+
               <p className="text-icreative-grey font-roboto text-lg lg:text-xl xl:text-2xl leading-relaxed">
-                At iCreative Learning, we blend creativity with curriculum to make
-                Math and English Language Arts (ELA) exciting, enriching, and
-                empowering for elementary school kids.
+                At iCreative Learning, we blend creativity with curriculum to
+                make Math and English Language Arts (ELA) exciting, enriching,
+                and empowering for elementary school kids.
               </p>
-              
+
               {/* Key Points */}
               <div className="space-y-3 mt-8">
                 {[
-                  'Research-backed teaching methods',
-                  'Cognitive development focus', 
-                  'Fun and engaging activities'
+                  "Research-backed teaching methods",
+                  "Cognitive development focus",
+                  "Fun and engaging activities",
                 ].map((point, index) => (
                   <div key={index} className="flex items-center gap-3 group">
                     <div className="w-2 h-2 bg-icreative-green rounded-full group-hover:bg-icreative-magenta transition-colors duration-300" />
@@ -59,7 +67,7 @@ export default function Introduction() {
                   </div>
                 ))}
               </div>
-              
+
               {/* CTA Button */}
               <div className="pt-6">
                 <Link
@@ -83,9 +91,18 @@ export default function Introduction() {
           </div>
 
           {/* Floating Elements */}
-          <div className="absolute top-8 left-8 w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm animate-float" style={{ animationDelay: '0s' }} />
-          <div className="absolute top-20 right-12 w-12 h-12 bg-icreative-green/30 rounded-full backdrop-blur-sm animate-float" style={{ animationDelay: '1s' }} />
-          <div className="absolute bottom-20 left-12 w-10 h-10 bg-icreative-pink/40 rounded-full backdrop-blur-sm animate-float" style={{ animationDelay: '2s' }} />
+          <div
+            className="absolute top-8 left-8 w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm animate-float"
+            style={{ animationDelay: "0s" }}
+          />
+          <div
+            className="absolute top-20 right-12 w-12 h-12 bg-icreative-green/30 rounded-full backdrop-blur-sm animate-float"
+            style={{ animationDelay: "1s" }}
+          />
+          <div
+            className="absolute bottom-20 left-12 w-10 h-10 bg-icreative-pink/40 rounded-full backdrop-blur-sm animate-float"
+            style={{ animationDelay: "2s" }}
+          />
 
           {/* Innovation Elements Image */}
           <div className="absolute inset-0 flex items-center justify-center p-6 lg:p-8">
@@ -104,8 +121,13 @@ export default function Introduction() {
       {/* Custom Animations */}
       <style jsx>{`
         @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
         }
         .animate-float {
           animation: float 3s ease-in-out infinite;

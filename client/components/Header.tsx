@@ -63,9 +63,9 @@ export default function Header() {
           <Link
             to="/"
             className={`px-3 py-2 font-inter text-lg transition-colors ${
-              location.pathname === '/'
-                ? 'text-icreative-purple'
-                : 'text-black hover:text-icreative-purple'
+              location.pathname === "/"
+                ? "text-icreative-purple"
+                : "text-black hover:text-icreative-purple"
             }`}
           >
             Home
@@ -73,9 +73,9 @@ export default function Header() {
           <Link
             to="/programs"
             className={`px-3 py-2 font-inter text-lg transition-colors ${
-              location.pathname === '/programs'
-                ? 'text-icreative-purple'
-                : 'text-black hover:text-icreative-purple'
+              location.pathname === "/programs"
+                ? "text-icreative-purple"
+                : "text-black hover:text-icreative-purple"
             }`}
           >
             Programs
@@ -83,9 +83,9 @@ export default function Header() {
           <Link
             to="/about"
             className={`px-3 py-2 font-inter text-lg transition-colors ${
-              location.pathname === '/about'
-                ? 'text-icreative-purple'
-                : 'text-black hover:text-icreative-purple'
+              location.pathname === "/about"
+                ? "text-icreative-purple"
+                : "text-black hover:text-icreative-purple"
             }`}
           >
             About
@@ -93,9 +93,9 @@ export default function Header() {
           <Link
             to="/cart"
             className={`flex items-center gap-2 px-3 py-2 font-inter text-lg transition-colors ${
-              location.pathname === '/cart'
-                ? 'text-icreative-purple'
-                : 'text-black hover:text-icreative-purple'
+              location.pathname === "/cart"
+                ? "text-icreative-purple"
+                : "text-black hover:text-icreative-purple"
             }`}
           >
             <ShoppingCart className="w-5 h-5" />
@@ -147,9 +147,9 @@ export default function Header() {
             <Link
               to="/"
               className={`block px-3 py-2 font-inter text-base font-medium hover:bg-icreative-purple/10 rounded-lg transition-colors ${
-                location.pathname === '/'
-                  ? 'text-icreative-purple'
-                  : 'text-black hover:text-icreative-purple'
+                location.pathname === "/"
+                  ? "text-icreative-purple"
+                  : "text-black hover:text-icreative-purple"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -158,9 +158,9 @@ export default function Header() {
             <Link
               to="/programs"
               className={`block px-3 py-2 font-inter text-base hover:bg-icreative-purple/10 rounded-lg transition-colors ${
-                location.pathname === '/programs'
-                  ? 'text-icreative-purple font-medium'
-                  : 'text-black hover:text-icreative-purple'
+                location.pathname === "/programs"
+                  ? "text-icreative-purple font-medium"
+                  : "text-black hover:text-icreative-purple"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -169,9 +169,9 @@ export default function Header() {
             <Link
               to="/about"
               className={`block px-3 py-2 font-inter text-base hover:bg-icreative-purple/10 rounded-lg transition-colors ${
-                location.pathname === '/about'
-                  ? 'text-icreative-purple font-medium'
-                  : 'text-black hover:text-icreative-purple'
+                location.pathname === "/about"
+                  ? "text-icreative-purple font-medium"
+                  : "text-black hover:text-icreative-purple"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -180,9 +180,9 @@ export default function Header() {
             <Link
               to="/cart"
               className={`flex items-center gap-2 px-3 py-2 font-inter text-base hover:bg-icreative-purple/10 rounded-lg transition-colors ${
-                location.pathname === '/cart'
-                  ? 'text-icreative-purple font-medium'
-                  : 'text-black hover:text-icreative-purple'
+                location.pathname === "/cart"
+                  ? "text-icreative-purple font-medium"
+                  : "text-black hover:text-icreative-purple"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >

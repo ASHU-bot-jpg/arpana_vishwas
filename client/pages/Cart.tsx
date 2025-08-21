@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import { Trash2 } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { Trash2 } from "lucide-react";
 
 interface CartItem {
   id: string;
@@ -15,16 +15,16 @@ export default function Cart() {
 
   useEffect(() => {
     // Load cart items from localStorage
-    const savedItems = localStorage.getItem('cartItems');
+    const savedItems = localStorage.getItem("cartItems");
     if (savedItems) {
       setCartItems(JSON.parse(savedItems));
     }
   }, []);
 
   const removeItem = (itemId: string) => {
-    const updatedItems = cartItems.filter(item => item.id !== itemId);
+    const updatedItems = cartItems.filter((item) => item.id !== itemId);
     setCartItems(updatedItems);
-    localStorage.setItem('cartItems', JSON.stringify(updatedItems));
+    localStorage.setItem("cartItems", JSON.stringify(updatedItems));
   };
 
   const getTotalPrice = () => {
@@ -33,17 +33,17 @@ export default function Cart() {
 
   const handleCheckout = () => {
     // Replace this URL with your actual WooCommerce checkout URL
-    const wooCommerceUrl = 'https://your-woocommerce-site.com/checkout';
-    
+    const wooCommerceUrl = "https://your-woocommerce-site.com/checkout";
+
     // You can pass cart items as URL parameters or set up a proper integration
     const cartData = encodeURIComponent(JSON.stringify(cartItems));
-    window.open(`${wooCommerceUrl}?cart_data=${cartData}`, '_blank');
+    window.open(`${wooCommerceUrl}?cart_data=${cartData}`, "_blank");
   };
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       <main className="py-16 px-6 lg:px-20">
         <div className="max-w-4xl mx-auto">
           {/* Page Title */}
@@ -64,7 +64,8 @@ export default function Cart() {
                   Your cart is empty
                 </h2>
                 <p className="text-icreative-grey font-roboto text-lg mb-6">
-                  Add some programs to get started with your child's learning journey!
+                  Add some programs to get started with your child's learning
+                  journey!
                 </p>
                 <Link
                   to="/programs"
@@ -80,7 +81,10 @@ export default function Cart() {
               {/* Cart Items List */}
               <div className="space-y-4">
                 {cartItems.map((item) => (
-                  <div key={item.id} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+                  <div
+                    key={item.id}
+                    className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm"
+                  >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
                         <h3 className="text-icreative-purple font-roboto text-lg font-bold mb-2">
@@ -121,7 +125,7 @@ export default function Cart() {
                   >
                     Proceed to Checkout
                   </button>
-                  
+
                   <div className="text-center">
                     <Link
                       to="/programs"
@@ -136,8 +140,9 @@ export default function Cart() {
               {/* WooCommerce Integration Note */}
               <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
                 <p className="text-yellow-800 text-sm">
-                  <strong>Note:</strong> This will redirect you to our secure payment portal powered by WooCommerce. 
-                  You can pay using credit card, PayPal, or other available payment methods.
+                  <strong>Note:</strong> This will redirect you to our secure
+                  payment portal powered by WooCommerce. You can pay using
+                  credit card, PayPal, or other available payment methods.
                 </p>
               </div>
             </div>
