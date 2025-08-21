@@ -1,5 +1,6 @@
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
