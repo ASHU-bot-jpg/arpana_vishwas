@@ -62,19 +62,19 @@ export default function Footer() {
               </h3>
               <div className="space-y-3">
                 <a
-                  href="#"
+                  href="/about"
                   className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors"
                 >
                   About Us
                 </a>
                 <a
-                  href="#"
+                  href="/about#our-team"
                   className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors"
                 >
                   Our Team
                 </a>
                 <a
-                  href="#"
+                  href="/#testimonials"
                   className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors"
                 >
                   Testimonials
@@ -113,9 +113,12 @@ export default function Footer() {
                 {/* Email */}
                 <div className="flex items-center gap-2">
                   <Mail className="w-5 h-5 text-purple-600 flex-shrink-0" />
-                  <span className="text-icreative-text-tertiary font-roboto text-sm lg:text-base">
-                    info@icreativelearning.com
-                  </span>
+                  <a
+                    href="mailto:info@iCreativeLearning.com"
+                    className="text-icreative-text-tertiary font-roboto text-sm lg:text-base hover:text-icreative-purple transition-colors"
+                  >
+                    info@iCreativeLearning.com
+                  </a>
                 </div>
               </div>
             </div>
