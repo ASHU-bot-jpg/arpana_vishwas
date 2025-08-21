@@ -30,7 +30,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 lg:py-28 px-6 lg:px-20 relative overflow-hidden">
+    <section id="testimonials" className="py-20 lg:py-28 px-6 lg:px-20 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 left-1/4 w-32 h-32 bg-gradient-to-br from-icreative-green/10 to-icreative-magenta/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-40 h-40 bg-gradient-to-br from-icreative-purple/10 to-icreative-pink/10 rounded-full blur-3xl" />
