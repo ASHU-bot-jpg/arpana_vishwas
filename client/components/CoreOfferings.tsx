@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const programs = [
   {
+    id: "cogat",
     title: "CogAT",
     subtitle: "Cognitive Abilities Test Prep",
     image:
@@ -10,6 +11,7 @@ const programs = [
     color: "from-blue-500 to-purple-600",
   },
   {
+    id: "cognitive-math",
     title: "Cognitive Math",
     subtitle: "Advanced Math Concepts",
     image:
@@ -17,6 +19,7 @@ const programs = [
     color: "from-green-500 to-teal-600",
   },
   {
+    id: "english-literature-arts",
     title: "ELA",
     subtitle: "English Language Arts",
     image:
@@ -24,6 +27,7 @@ const programs = [
     color: "from-orange-500 to-red-600",
   },
   {
+    id: "abacus",
     title: "Abacus",
     subtitle: "Mental Math Mastery",
     image:
@@ -62,9 +66,10 @@ export default function CoreOfferings() {
         {/* Programs Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
           {programs.map((program, index) => (
-            <div
+            <Link
               key={index}
-              className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out transform hover:-translate-y-3 overflow-hidden border border-gray-100"
+              to={`/program/${program.id}`}
+              className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out transform hover:-translate-y-3 overflow-hidden border border-gray-100 block"
             >
               {/* Program Image with Overlay */}
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -106,12 +111,12 @@ export default function CoreOfferings() {
                 <div className="flex justify-center">
                   <div className="bg-gradient-to-r from-icreative-green to-green-400 group-hover:from-icreative-magenta group-hover:to-purple-500 px-6 py-2 rounded-2xl transition-all duration-300 transform group-hover:scale-105">
                     <span className="text-black group-hover:text-white font-inter text-sm font-bold transition-colors duration-300">
-                      Explore Program
+                      Learn More
                     </span>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
