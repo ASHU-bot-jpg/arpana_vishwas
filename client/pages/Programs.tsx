@@ -156,11 +156,11 @@ export default function Programs() {
                           Ready to start?
                         </p>
                         <p className="text-icreative-purple font-inter text-sm font-semibold">
-                          $120 per program
+                          Join thousands of students
                         </p>
                       </div>
                       <span className="bg-gradient-to-r from-icreative-green to-green-400 group-hover:from-icreative-magenta group-hover:to-purple-500 text-black group-hover:text-white px-6 py-3 rounded-2xl font-inter text-sm lg:text-base font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
-                        View Details
+                        Learn More
                       </span>
                     </div>
                   </div>
