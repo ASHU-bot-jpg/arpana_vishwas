@@ -14,9 +14,10 @@ interface FormData {
 }
 
 const programs = [
-  { id: "abacus", name: "Abacus Arithmetic (Grades 1-5)", price: 150 },
-  { id: "language-arts", name: "Language Arts (Grades 1-5)", price: 180 },
-  { id: "math", name: "Math Program (Grades 1-5)", price: 160 },
+  { id: "cogat", name: "Cognitive Abilities Test (CogAT)", price: 120 },
+  { id: "cognitive-math", name: "Cognitive Math", price: 120 },
+  { id: "english-literature-arts", name: "English Literature & Arts", price: 120 },
+  { id: "abacus", name: "Abacus Mastery (Mental Arithmetic)", price: 120 },
 ];
 
 const hearAboutOptions = [
