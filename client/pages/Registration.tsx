@@ -16,7 +16,11 @@ interface FormData {
 const programs = [
   { id: "cogat", name: "Cognitive Abilities Test (CogAT)", price: 120 },
   { id: "cognitive-math", name: "Cognitive Math", price: 120 },
-  { id: "english-literature-arts", name: "English Literature & Arts", price: 120 },
+  {
+    id: "english-literature-arts",
+    name: "English Literature & Arts",
+    price: 120,
+  },
   { id: "abacus", name: "Abacus Mastery (Mental Arithmetic)", price: 120 },
 ];
 

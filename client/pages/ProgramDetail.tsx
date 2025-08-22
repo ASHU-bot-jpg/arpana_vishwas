@@ -1,100 +1,122 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import { ArrowLeft, ShoppingCart, CheckCircle, Clock, Users, Award } from 'lucide-react';
+import { useParams, Link, useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import {
+  ArrowLeft,
+  ShoppingCart,
+  CheckCircle,
+  Clock,
+  Users,
+  Award,
+} from "lucide-react";
 
 const programs = {
-  'cogat': {
+  cogat: {
     title: "Cognitive Abilities Test (CogAT)",
     subtitle: "Unlock Your Child's Learning Potential",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/ecc8a34818a06e93d4c8e0b6dafb60b7635c7eb8?width=545",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/ecc8a34818a06e93d4c8e0b6dafb60b7635c7eb8?width=545",
     color: "from-blue-500 to-purple-600",
     price: 120,
-    description: "The CogAT is a trusted, age-appropriate assessment that reveals how children think—not just what they know. It measures verbal, quantitative, and nonverbal reasoning through fun, grade-level tasks. Ideal for identifying strengths in logic, memory, and reasoning, the CogAT helps guide personalized learning paths and supports placement in advanced programs. For students up to Grade 5, our coaching ensures they approach the test with confidence, readiness, and the right strategies to shine.",
+    description:
+      "The CogAT is a trusted, age-appropriate assessment that reveals how children think—not just what they know. It measures verbal, quantitative, and nonverbal reasoning through fun, grade-level tasks. Ideal for identifying strengths in logic, memory, and reasoning, the CogAT helps guide personalized learning paths and supports placement in advanced programs. For students up to Grade 5, our coaching ensures they approach the test with confidence, readiness, and the right strategies to shine.",
     features: [
       "Verbal, quantitative, and nonverbal reasoning assessment",
       "Age-appropriate, fun grade-level tasks",
       "Identifies strengths in logic, memory, and reasoning",
       "Guides personalized learning paths",
       "Supports placement in advanced programs",
-      "Confidence-building test preparation strategies"
+      "Confidence-building test preparation strategies",
     ],
     ageRange: "Kindergarten - Grade 5",
     duration: "8-12 weeks",
-    classSize: "4-6 students"
+    classSize: "4-6 students",
   },
-  'cognitive-math': {
+  "cognitive-math": {
     title: "Cognitive Math",
     subtitle: "Where Math Meets Critical Thinking",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/524c7d38c59612dcc131058ddfd229b02c7cbe1f?width=545",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/524c7d38c59612dcc131058ddfd229b02c7cbe1f?width=545",
     color: "from-green-500 to-teal-600",
     price: 120,
-    description: "Cognitive Math blends problem-solving, visual reasoning, and real-world scenarios to strengthen mathematical thinking rather than just memorizing facts. Drawing on research-based methods, our curriculum encourages students to use their experiences and reasoning skills to solve age-appropriate challenges—making math intuitive, relevant, and fun from kindergarten through Grade 5.",
+    description:
+      "Cognitive Math blends problem-solving, visual reasoning, and real-world scenarios to strengthen mathematical thinking rather than just memorizing facts. Drawing on research-based methods, our curriculum encourages students to use their experiences and reasoning skills to solve age-appropriate challenges—making math intuitive, relevant, and fun from kindergarten through Grade 5.",
     features: [
       "Problem-solving and visual reasoning focus",
       "Real-world mathematical scenarios",
       "Research-based teaching methods",
       "Experience-based learning approach",
       "Age-appropriate mathematical challenges",
-      "Intuitive and relevant math concepts"
+      "Intuitive and relevant math concepts",
     ],
     ageRange: "Kindergarten - Grade 5",
     duration: "12-16 weeks",
-    classSize: "4-6 students"
+    classSize: "4-6 students",
   },
-  'english-literature-arts': {
+  "english-literature-arts": {
     title: "English Literature & Arts",
     subtitle: "Ignite a Love for Reading and Expression",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/11693bba33ed0a4d1a014c3849837105e2d30148?width=545",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/11693bba33ed0a4d1a014c3849837105e2d30148?width=545",
     color: "from-orange-500 to-red-600",
     price: 120,
-    description: "Our English Literature & Arts program goes beyond basic grammar and spelling. Through storytelling, classic and contemporary literature, discussion, creative writing, and expressive arts, students develop deeper comprehension, vocabulary, and creative expression. Inspired by integrated ELA programs that bring together literary, nonfiction, and multimedia elements, this curriculum cultivates confident readers and compassionate thinkers.",
+    description:
+      "Our English Literature & Arts program goes beyond basic grammar and spelling. Through storytelling, classic and contemporary literature, discussion, creative writing, and expressive arts, students develop deeper comprehension, vocabulary, and creative expression. Inspired by integrated ELA programs that bring together literary, nonfiction, and multimedia elements, this curriculum cultivates confident readers and compassionate thinkers.",
     features: [
       "Classic and contemporary literature exploration",
       "Creative writing and storytelling",
       "Discussion-based learning",
       "Expressive arts integration",
       "Deeper comprehension development",
-      "Vocabulary and creative expression enhancement"
+      "Vocabulary and creative expression enhancement",
     ],
     ageRange: "Kindergarten - Grade 5",
     duration: "12-16 weeks",
-    classSize: "4-6 students"
+    classSize: "4-6 students",
   },
-  'abacus': {
+  abacus: {
     title: "Abacus Mastery (Mental Arithmetic)",
     subtitle: "Build Speed, Focus, and Mathematical Confidence",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/a05e4d70fe5d0f6a2529f37551feb54b6833df28?width=545",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/a05e4d70fe5d0f6a2529f37551feb54b6833df28?width=545",
     color: "from-purple-500 to-pink-600",
     price: 120,
-    description: "Abacus training develops powerful mental math skills by teaching students to visualize bead movements in their minds. This hands-on learning improves concentration, memory, processing speed, and spatial awareness. Students gain rapid calculation abilities, sharpened cognition, and boosted confidence—making math mastery more fun and effective than ever. Ideal for building a strong STEM foundation early on.",
+    description:
+      "Abacus training develops powerful mental math skills by teaching students to visualize bead movements in their minds. This hands-on learning improves concentration, memory, processing speed, and spatial awareness. Students gain rapid calculation abilities, sharpened cognition, and boosted confidence—making math mastery more fun and effective than ever. Ideal for building a strong STEM foundation early on.",
     features: [
       "Mental math visualization techniques",
       "Hands-on bead movement learning",
       "Improved concentration and memory",
       "Enhanced processing speed",
       "Spatial awareness development",
-      "Strong STEM foundation building"
+      "Strong STEM foundation building",
     ],
     ageRange: "Ages 5-12",
     duration: "16-20 weeks",
-    classSize: "4-6 students"
-  }
+    classSize: "4-6 students",
+  },
 };
 
 export default function ProgramDetail() {
   const { programId } = useParams<{ programId: string }>();
   const navigate = useNavigate();
-  
-  const program = programId ? programs[programId as keyof typeof programs] : null;
+
+  const program = programId
+    ? programs[programId as keyof typeof programs]
+    : null;
 
   if (!program) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30">
         <Header />
         <div className="py-20 px-6 text-center">
-          <h1 className="text-3xl font-bold text-icreative-purple mb-4">Program Not Found</h1>
-          <Link to="/programs" className="text-icreative-magenta hover:underline">
+          <h1 className="text-3xl font-bold text-icreative-purple mb-4">
+            Program Not Found
+          </h1>
+          <Link
+            to="/programs"
+            className="text-icreative-magenta hover:underline"
+          >
             Back to Programs
           </Link>
         </div>
@@ -104,26 +126,26 @@ export default function ProgramDetail() {
   }
 
   const addToCart = () => {
-    const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+    const cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
     const existingItem = cartItems.find((item: any) => item.id === programId);
-    
+
     if (!existingItem) {
       cartItems.push({
         id: programId,
         name: program.title,
-        price: program.price
+        price: program.price,
       });
-      localStorage.setItem('cartItems', JSON.stringify(cartItems));
-      navigate('/cart');
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      navigate("/cart");
     } else {
-      alert('This program is already in your cart!');
+      alert("This program is already in your cart!");
     }
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30">
       <Header />
-      
+
       <main className="py-20 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto">
           {/* Back Button */}
@@ -140,10 +162,12 @@ export default function ProgramDetail() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Program Image */}
             <div className="relative">
-              <div className={`absolute -inset-4 bg-gradient-to-r ${program.color} rounded-3xl blur-lg opacity-30`} />
+              <div
+                className={`absolute -inset-4 bg-gradient-to-r ${program.color} rounded-3xl blur-lg opacity-30`}
+              />
               <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
-                <img 
-                  src={program.image} 
+                <img
+                  src={program.image}
                   alt={program.title}
                   className="w-full aspect-[4/3] object-cover rounded-2xl"
                 />
@@ -156,13 +180,15 @@ export default function ProgramDetail() {
               <div className="space-y-4">
                 <div className="inline-flex items-center gap-2 bg-gradient-to-r from-icreative-purple/10 to-icreative-magenta/10 border border-icreative-purple/20 px-4 py-2 rounded-full">
                   <Award className="w-4 h-4 text-icreative-magenta" />
-                  <span className="text-icreative-purple font-inter text-sm font-medium">Premium Program</span>
+                  <span className="text-icreative-purple font-inter text-sm font-medium">
+                    Premium Program
+                  </span>
                 </div>
-                
+
                 <h1 className="text-icreative-purple font-roboto text-3xl lg:text-4xl font-bold">
                   {program.title}
                 </h1>
-                
+
                 <p className="text-icreative-magenta font-roboto text-xl lg:text-2xl font-medium">
                   {program.subtitle}
                 </p>
@@ -172,8 +198,12 @@ export default function ProgramDetail() {
               <div className="bg-gradient-to-r from-icreative-green/10 to-green-400/10 border border-icreative-green/20 rounded-2xl p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-icreative-grey font-inter text-sm">Program Fee</p>
-                    <p className="text-icreative-purple font-roboto text-3xl font-bold">${program.price}</p>
+                    <p className="text-icreative-grey font-inter text-sm">
+                      Program Fee
+                    </p>
+                    <p className="text-icreative-purple font-roboto text-3xl font-bold">
+                      ${program.price}
+                    </p>
                   </div>
                   <button
                     onClick={addToCart}
@@ -189,18 +219,30 @@ export default function ProgramDetail() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/50">
                   <Users className="w-6 h-6 text-icreative-purple mx-auto mb-2" />
-                  <p className="text-icreative-grey font-inter text-xs">Class Size</p>
-                  <p className="text-icreative-purple font-roboto text-sm font-bold">{program.classSize}</p>
+                  <p className="text-icreative-grey font-inter text-xs">
+                    Class Size
+                  </p>
+                  <p className="text-icreative-purple font-roboto text-sm font-bold">
+                    {program.classSize}
+                  </p>
                 </div>
                 <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/50">
                   <Clock className="w-6 h-6 text-icreative-purple mx-auto mb-2" />
-                  <p className="text-icreative-grey font-inter text-xs">Duration</p>
-                  <p className="text-icreative-purple font-roboto text-sm font-bold">{program.duration}</p>
+                  <p className="text-icreative-grey font-inter text-xs">
+                    Duration
+                  </p>
+                  <p className="text-icreative-purple font-roboto text-sm font-bold">
+                    {program.duration}
+                  </p>
                 </div>
                 <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/50">
                   <Award className="w-6 h-6 text-icreative-purple mx-auto mb-2" />
-                  <p className="text-icreative-grey font-inter text-xs">Age Range</p>
-                  <p className="text-icreative-purple font-roboto text-sm font-bold">{program.ageRange}</p>
+                  <p className="text-icreative-grey font-inter text-xs">
+                    Age Range
+                  </p>
+                  <p className="text-icreative-purple font-roboto text-sm font-bold">
+                    {program.ageRange}
+                  </p>
                 </div>
               </div>
 
@@ -240,7 +282,9 @@ export default function ProgramDetail() {
                 {program.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-icreative-green flex-shrink-0" />
-                    <span className="text-icreative-grey font-inter text-base">{feature}</span>
+                    <span className="text-icreative-grey font-inter text-base">
+                      {feature}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -253,7 +297,8 @@ export default function ProgramDetail() {
               Ready to Enroll in {program.title}?
             </h3>
             <p className="font-inter text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-              Join our program and watch your child develop exceptional skills and confidence in learning.
+              Join our program and watch your child develop exceptional skills
+              and confidence in learning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
