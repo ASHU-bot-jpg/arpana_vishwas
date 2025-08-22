@@ -21,7 +21,7 @@ const specialOffers = [
     programs: 1,
     description: "Choose any one program",
     color: "from-icreative-green to-green-400",
-    badge: "POPULAR"
+    badge: "POPULAR",
   },
   {
     id: "two-programs-offer",
@@ -33,7 +33,7 @@ const specialOffers = [
     programs: 2,
     description: "Choose any two programs",
     color: "from-icreative-magenta to-purple-500",
-    badge: "BEST VALUE"
+    badge: "BEST VALUE",
   },
   {
     id: "three-programs-offer",
@@ -45,7 +45,7 @@ const specialOffers = [
     programs: 3,
     description: "Choose any three programs",
     color: "from-icreative-purple to-indigo-500",
-    badge: "SAVE MORE"
+    badge: "SAVE MORE",
   },
   {
     id: "all-programs-offer",
@@ -57,8 +57,8 @@ const specialOffers = [
     programs: 4,
     description: "All four programs included",
     color: "from-orange-500 to-red-500",
-    badge: "MAXIMUM SAVINGS"
-  }
+    badge: "MAXIMUM SAVINGS",
+  },
 ];
 
 export default function Cart() {
@@ -72,11 +72,11 @@ export default function Cart() {
     }
   }, []);
 
-  const addOfferToCart = (offer: typeof specialOffers[0]) => {
+  const addOfferToCart = (offer: (typeof specialOffers)[0]) => {
     const newItem = {
       id: offer.id,
       name: offer.title,
-      price: offer.salePrice
+      price: offer.salePrice,
     };
 
     const updatedItems = [...cartItems, newItem];
@@ -147,13 +147,16 @@ export default function Cart() {
                 <div className="text-center">
                   <div className="inline-flex items-center gap-2 bg-gradient-to-r from-icreative-purple/10 to-icreative-magenta/10 border border-icreative-purple/20 px-4 py-2 rounded-full mb-4">
                     <Gift className="w-4 h-4 text-icreative-magenta" />
-                    <span className="text-icreative-purple font-inter text-sm font-medium">Special Offers</span>
+                    <span className="text-icreative-purple font-inter text-sm font-medium">
+                      Special Offers
+                    </span>
                   </div>
                   <h3 className="text-icreative-purple font-roboto text-2xl lg:text-3xl font-bold mb-4">
                     Program Bundles & Savings
                   </h3>
                   <p className="text-icreative-grey font-inter text-lg max-w-2xl mx-auto">
-                    Save more when you choose multiple programs for comprehensive learning
+                    Save more when you choose multiple programs for
+                    comprehensive learning
                   </p>
                 </div>
 
@@ -181,7 +184,9 @@ export default function Cart() {
                       )}
 
                       {/* Card Content */}
-                      <div className={`relative bg-gradient-to-br ${offer.color} p-6 text-center text-white`}>
+                      <div
+                        className={`relative bg-gradient-to-br ${offer.color} p-6 text-center text-white`}
+                      >
                         <div className="space-y-2 mb-4">
                           <Sparkles className="w-8 h-8 mx-auto opacity-80" />
                           <h4 className="font-roboto text-lg font-bold">
@@ -213,7 +218,8 @@ export default function Cart() {
                             <Star key={i} className="w-4 h-4 fill-current" />
                           ))}
                           <span className="ml-2 text-white/90 font-inter text-sm">
-                            {offer.programs} {offer.programs === 1 ? 'Program' : 'Programs'}
+                            {offer.programs}{" "}
+                            {offer.programs === 1 ? "Program" : "Programs"}
                           </span>
                         </div>
                       </div>
@@ -234,8 +240,9 @@ export default function Cart() {
                 {/* Bottom Note */}
                 <div className="text-center bg-gradient-to-r from-icreative-purple/5 to-icreative-magenta/5 rounded-2xl p-6 border border-icreative-purple/10">
                   <p className="text-icreative-grey font-inter text-sm">
-                    <strong>Note:</strong> Bundle offers include flexible program selection.
-                    Choose your preferred programs during checkout process.
+                    <strong>Note:</strong> Bundle offers include flexible
+                    program selection. Choose your preferred programs during
+                    checkout process.
                   </p>
                 </div>
               </div>
