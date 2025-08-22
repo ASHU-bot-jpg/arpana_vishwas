@@ -5,7 +5,6 @@ import {
   CheckCircle,
   Users as GroupIcon,
   Puzzle,
-  ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -124,14 +123,6 @@ export default function WhyChooseUs() {
                 <p className="text-icreative-grey font-inter text-sm lg:text-base leading-relaxed">
                   {feature.description}
                 </p>
-
-                {/* Read More Link */}
-                <div className="pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="inline-flex items-center gap-2 text-icreative-purple hover:text-icreative-magenta font-inter text-sm font-medium cursor-pointer">
-                    Learn More
-                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </div>
-                </div>
               </div>
 
               {/* Bottom Accent Line */}
@@ -156,18 +147,16 @@ export default function WhyChooseUs() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/register"
-                className="group bg-gradient-to-r from-icreative-green to-green-400 hover:from-icreative-magenta hover:to-purple-500 text-black hover:text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center justify-center gap-2"
+                className="group bg-gradient-to-r from-icreative-green to-green-400 hover:from-icreative-magenta hover:to-purple-500 text-black hover:text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Schedule a Free Trial
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
 
               <a
                 href="mailto:info@iCreativeLearning.com"
-                className="group border-2 border-icreative-purple text-icreative-purple hover:bg-icreative-purple hover:text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 inline-flex items-center justify-center gap-2"
+                className="group border-2 border-icreative-purple text-icreative-purple hover:bg-icreative-purple hover:text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300"
               >
                 Contact Us
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
             </div>
           </div>
