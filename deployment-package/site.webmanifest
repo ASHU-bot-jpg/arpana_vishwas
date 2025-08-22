@@ -1,0 +1,16 @@
+{
+  "name": "iCreative Learning",
+  "short_name": "iCreative",
+  "description": "Empowering elementary students through creative, fun, and effective learning programs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B5CF6",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
