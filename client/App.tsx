@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Registration from "./pages/Registration";
 import Cart from "./pages/Cart";
 import Admin from "./pages/Admin";
+import ProgramDetail from "./pages/ProgramDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/program/:programId" element={<ProgramDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/cart" element={<Cart />} />
