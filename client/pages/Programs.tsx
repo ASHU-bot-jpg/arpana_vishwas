@@ -85,9 +85,10 @@ export default function Programs() {
           {/* Programs Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 max-w-6xl mx-auto">
             {programs.map((program, index) => (
-              <div
+              <Link
                 key={index}
-                className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 overflow-hidden border border-gray-100"
+                to={`/program/${program.id}`}
+                className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 overflow-hidden border border-gray-100 block"
               >
                 {/* Program Image with Overlay */}
                 <div className="relative aspect-[4/3] overflow-hidden">
@@ -107,7 +108,7 @@ export default function Programs() {
                       {program.title}
                     </h3>
                     <p className="text-white/90 font-inter text-sm lg:text-base px-4 drop-shadow-lg">
-                      Explore this program
+                      View Program Details
                     </p>
                   </div>
                 </div>
@@ -155,16 +156,16 @@ export default function Programs() {
                           Ready to start?
                         </p>
                         <p className="text-icreative-purple font-inter text-sm font-semibold">
-                          Join thousands of students
+                          $120 per program
                         </p>
                       </div>
-                      <span className="bg-gradient-to-r from-icreative-green to-green-400 hover:from-icreative-magenta hover:to-purple-500 text-black hover:text-white px-6 py-3 rounded-2xl font-inter text-sm lg:text-base font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 cursor-pointer">
+                      <span className="bg-gradient-to-r from-icreative-green to-green-400 group-hover:from-icreative-magenta group-hover:to-purple-500 text-black group-hover:text-white px-6 py-3 rounded-2xl font-inter text-sm lg:text-base font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
                         View Details
                       </span>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -185,7 +186,7 @@ export default function Programs() {
                 Schedule Free Assessment
               </Link>
               <Link
-                to="/about"
+                to="/"
                 className="border-2 border-white text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-white hover:text-icreative-purple transition-all duration-300"
               >
                 Learn More About Us
