@@ -29,20 +29,24 @@ Modern, responsive website for iCreative Learning - empowering elementary studen
 ## 🚀 Quick Start
 
 ### Development
+
 ```bash
 npm install
 npm run dev
 ```
 
 ### Production Build
+
 ```bash
 npm run build:client
 ```
+
 Files will be in `dist/spa/` directory.
 
 ## 📦 Deployment
 
 ### 🌐 Netlify (Recommended)
+
 1. **Push to GitHub** (click Push button in Builder.io)
 2. **Connect GitHub to Netlify**
 3. **Build settings**:
@@ -53,6 +57,7 @@ Files will be in `dist/spa/` directory.
 **📚 See `NETLIFY_DEPLOYMENT_GUIDE.md` for detailed steps**
 
 ### 🔧 WordPress Hosting
+
 Upload contents of `deployment-package/` to your hosting.
 
 **📚 See `WORDPRESS_DEPLOYMENT_GUIDE.md` for detailed steps**
@@ -68,7 +73,9 @@ Upload contents of `deployment-package/` to your hosting.
 ## 🎨 Customization
 
 ### Colors
+
 Update colors in `tailwind.config.ts`:
+
 ```javascript
 colors: {
   'icreative-purple': '#8B5CF6',
@@ -79,6 +86,7 @@ colors: {
 ```
 
 ### Content
+
 - **Programs**: Update in `client/pages/Programs.tsx`
 - **Testimonials**: Update in `client/components/Testimonials.tsx`
 - **Team Info**: Update in `client/pages/About.tsx`
@@ -93,6 +101,7 @@ colors: {
 ## 📱 PWA Support
 
 The site includes PWA manifest (`site.webmanifest`) for:
+
 - Add to home screen functionality
 - App-like experience
 - Offline support (basic)
@@ -100,13 +109,16 @@ The site includes PWA manifest (`site.webmanifest`) for:
 ## 🔗 Integrations
 
 ### WooCommerce
+
 Update placeholder URLs in:
+
 - Header Pay Fees buttons
 - Testimonials Pay Fees button
 
 Replace `https://your-woocommerce-site.com/checkout` with your actual URL.
 
 ### Email
+
 Contact forms submit to: `info@iCreativeLearning.com`
 
 ## 📚 Documentation

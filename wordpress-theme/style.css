@@ -12,12 +12,12 @@ Author: iCreative Learning Team
 
 /* Custom CSS Variables */
 :root {
-  --icreative-purple: #8B5CF6;
-  --icreative-magenta: #E407FD;
-  --icreative-green: #10B981;
-  --icreative-pink: #FCE7F3;
-  --icreative-pink-light: #FDF2F8;
-  --icreative-grey: #6B7280;
+  --icreative-purple: #8b5cf6;
+  --icreative-magenta: #e407fd;
+  --icreative-green: #10b981;
+  --icreative-pink: #fce7f3;
+  --icreative-pink-light: #fdf2f8;
+  --icreative-grey: #6b7280;
 }
 
 /* Add your existing custom styles here */

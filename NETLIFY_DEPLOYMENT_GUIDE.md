@@ -12,11 +12,13 @@
 ## 🎯 **Method 1: GitHub + Netlify (Recommended)**
 
 ### **Step 1: Push Code to GitHub**
+
 1. **In Builder.io**, click the **"Push"** button (top right)
 2. This will push all your latest changes to GitHub
 3. Your repository will be updated with all the fixes
 
 ### **Step 2: Connect GitHub to Netlify**
+
 1. **Go to Netlify** (netlify.com)
 2. **Log in** to your Netlify account
 3. **Click "Add new site"** → **"Import an existing project"**
@@ -24,6 +26,7 @@
 5. **Select your repository** (the one you just pushed to)
 
 ### **Step 3: Configure Build Settings**
+
 **CRITICAL**: Use these exact settings:
 
 ```
@@ -32,10 +35,12 @@ Publish directory: dist/spa
 ```
 
 **⚠️ DO NOT USE:**
+
 - ❌ `npm run build` (this builds server + client)
 - ❌ `dist` as publish directory (wrong path)
 
 ### **Step 4: Deploy**
+
 1. **Click "Deploy site"**
 2. **Wait for build to complete** (2-3 minutes)
 3. **Your site will be live!**
@@ -45,6 +50,7 @@ Publish directory: dist/spa
 ## 🎯 **Method 2: Manual Upload (If GitHub method fails)**
 
 ### **Step 1: Download Build Files**
+
 1. Download the `dist/spa/` folder contents from this project
 2. Make sure you have all these files:
    - `index.html`
@@ -55,12 +61,15 @@ Publish directory: dist/spa
    - `placeholder.svg`
 
 ### **Step 2: Upload to Netlify**
+
 1. **Go to Netlify** (netlify.com)
 2. **Drag and drop** the `dist/spa` folder contents to the deploy area
 3. **⚠️ IMPORTANT**: Don't drag the `spa` folder itself - drag its CONTENTS
 
 ### **Step 3: Configure Redirects**
+
 After upload, add this redirect rule in Netlify:
+
 1. **Go to Site Settings** → **Build & Deploy** → **Redirects**
 2. **Add rule**:
    - **From**: `/*`
@@ -72,11 +81,13 @@ After upload, add this redirect rule in Netlify:
 ## 🔧 **Why This Fixes "Page Not Found" Error**
 
 ### **Previous Issues:**
+
 1. **Wrong build command** - Used `npm run build` instead of `npm run build:client`
 2. **Wrong publish directory** - Used `dist` instead of `dist/spa`
 3. **Missing redirects** - React Router needs SPA redirects
 
 ### **Our Solution:**
+
 ✅ **Correct build command**: `npm run build:client` (client-only build)
 ✅ **Correct publish directory**: `dist/spa` (where client files are)
 ✅ **Proper redirects**: All routes serve `index.html` for React Router
@@ -86,23 +97,30 @@ After upload, add this redirect rule in Netlify:
 ## 📋 **Step-by-Step: GitHub Method (Recommended)**
 
 ### **1. Push to GitHub**
+
 ```bash
 # This will be done when you click "Push" in Builder.io
 ```
 
 ### **2. Netlify Configuration**
+
 When connecting to Netlify, use:
+
 - **Repository**: Your GitHub repo
 - **Branch**: `main` (or your default branch)
 - **Build command**: `npm run build:client`
 - **Publish directory**: `dist/spa`
 
 ### **3. Environment Variables (if needed)**
+
 In Netlify dashboard → Site Settings → Environment Variables:
+
 - No special environment variables needed for this build
 
 ### **4. Custom Domain Setup**
+
 After successful deployment:
+
 1. **Go to Domain Settings** in Netlify
 2. **Add custom domain**: `yourdomain.com`
 3. **Update DNS**: Point your WordPress domain to Netlify
@@ -113,11 +131,13 @@ After successful deployment:
 ## 🎯 **Domain Transfer from WordPress**
 
 ### **Option 1: Point Domain to Netlify**
+
 1. **Keep domain with WordPress**
 2. **Change DNS settings** to point to Netlify
 3. **In WordPress domain settings**, update nameservers to Netlify's
 
 ### **Option 2: Transfer Domain to Netlify**
+
 1. **Netlify Domains**: Manage domain directly in Netlify
 2. **DNS management**: All in one place
 3. **Auto SSL**: Automatic certificate management
@@ -127,6 +147,7 @@ After successful deployment:
 ## 🔍 **Testing Checklist**
 
 After deployment, verify:
+
 - [ ] **Homepage loads** correctly
 - [ ] **Navigation works** (Home, Programs, About)
 - [ ] **Direct URLs work** (try visiting `/programs` directly)
@@ -140,17 +161,20 @@ After deployment, verify:
 ## 🆘 **Troubleshooting**
 
 ### **If you see "Page Not Found":**
+
 1. **Check build logs** in Netlify dashboard
 2. **Verify build command**: Should be `npm run build:client`
 3. **Check publish directory**: Should be `dist/spa`
 4. **Verify redirects**: `/*` → `/index.html` (200)
 
 ### **If build fails:**
+
 1. **Check Node.js version**: Should be 18 or higher
 2. **Check dependencies**: All packages should install
 3. **Review build logs**: Look for specific errors
 
 ### **If styles are missing:**
+
 1. **Check assets folder**: Should be in published files
 2. **Verify file paths**: CSS should load from `/assets/`
 3. **Check network tab**: Look for 404 errors
