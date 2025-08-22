@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const programs = [
   {
+    id: "cognitive-math",
     title: "Cognitive Math",
     description:
       "Building mathematical thinking through hands-on exploration and real-world applications",
@@ -17,6 +18,7 @@ const programs = [
     color: "from-blue-500 to-purple-600",
   },
   {
+    id: "english-literature-arts",
     title: "English Language Arts (ELA)",
     description:
       "Developing language skills through creative expression and interactive learning",
@@ -30,6 +32,7 @@ const programs = [
     color: "from-green-500 to-teal-600",
   },
   {
+    id: "abacus",
     title: "Abacus",
     description:
       "Ancient tool for modern minds - master mental math with confidence",
@@ -43,6 +46,7 @@ const programs = [
     color: "from-orange-500 to-red-600",
   },
   {
+    id: "cogat",
     title: "CogAT",
     description:
       "Cognitive abilities test preparation for gifted and talented programs",
@@ -154,12 +158,9 @@ export default function Programs() {
                           Join thousands of students
                         </p>
                       </div>
-                      <Link
-                        to="/register"
-                        className="bg-gradient-to-r from-icreative-green to-green-400 hover:from-icreative-magenta hover:to-purple-500 text-black hover:text-white px-6 py-3 rounded-2xl font-inter text-sm lg:text-base font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
-                      >
-                        Register Now
-                      </Link>
+                      <span className="bg-gradient-to-r from-icreative-green to-green-400 hover:from-icreative-magenta hover:to-purple-500 text-black hover:text-white px-6 py-3 rounded-2xl font-inter text-sm lg:text-base font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 cursor-pointer">
+                        View Details
+                      </span>
                     </div>
                   </div>
                 </div>
