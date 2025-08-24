@@ -91,9 +91,9 @@ const programs = {
       "Spatial awareness development",
       "Strong STEM foundation building",
     ],
-    ageRange: "Ages 5-12",
-    duration: "16-20 weeks",
-    classSize: "4-6 students",
+    ageRange: "1st and 2nd Grade",
+    duration: "60 min per week, 16-20 weeks",
+    classSize: "1-5 students",
   },
 };
 
