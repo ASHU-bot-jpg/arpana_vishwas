@@ -49,9 +49,9 @@ const programs = {
       "Age-appropriate mathematical challenges",
       "Intuitive and relevant math concepts",
     ],
-    ageRange: "Kindergarten - Grade 5",
-    duration: "12-16 weeks",
-    classSize: "4-6 students",
+    ageRange: "1st and 2nd Grade",
+    duration: "60 min per week, 12-16 weeks",
+    classSize: "1-5 students",
   },
   "english-literature-arts": {
     title: "English Literature & Arts",
