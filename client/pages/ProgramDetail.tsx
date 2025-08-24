@@ -28,9 +28,9 @@ const programs = {
       "Supports placement in advanced programs",
       "Confidence-building test preparation strategies",
     ],
-    ageRange: "Kindergarten - Grade 5",
-    duration: "8-12 weeks",
-    classSize: "4-6 students",
+    ageRange: "1st and 2nd Grade",
+    duration: "60 min per week, 8-12 weeks",
+    classSize: "1-5 students",
   },
   "cognitive-math": {
     title: "Cognitive Math",
