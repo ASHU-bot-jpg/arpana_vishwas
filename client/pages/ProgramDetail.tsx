@@ -1,13 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import {
-  ArrowLeft,
-  CheckCircle,
-  Clock,
-  Users,
-  Award,
-} from "lucide-react";
+import { ArrowLeft, CheckCircle, Clock, Users, Award } from "lucide-react";
 
 const programs = {
   cogat: {
@@ -119,7 +113,6 @@ export default function ProgramDetail() {
     );
   }
 
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30">
       <Header />
@@ -171,7 +164,6 @@ export default function ProgramDetail() {
                   {program.subtitle}
                 </p>
               </div>
-
 
               {/* Program Info */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
