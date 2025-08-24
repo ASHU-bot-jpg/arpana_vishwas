@@ -17,7 +17,6 @@ const programs = {
     image:
       "https://api.builder.io/api/v1/image/assets/TEMP/ecc8a34818a06e93d4c8e0b6dafb60b7635c7eb8?width=545",
     color: "from-blue-500 to-purple-600",
-    price: 120,
     description:
       "The CogAT is a trusted, age-appropriate assessment that reveals how children think—not just what they know. It measures verbal, quantitative, and nonverbal reasoning through fun, grade-level tasks. Ideal for identifying strengths in logic, memory, and reasoning, the CogAT helps guide personalized learning paths and supports placement in advanced programs. For students up to Grade 5, our coaching ensures they approach the test with confidence, readiness, and the right strategies to shine.",
     features: [
@@ -29,7 +28,7 @@ const programs = {
       "Confidence-building test preparation strategies",
     ],
     ageRange: "1st and 2nd Grade",
-    duration: "60 min per week, 8-12 weeks",
+    duration: "60 minutes per week",
     classSize: "1-5 students",
   },
   "cognitive-math": {
@@ -38,7 +37,6 @@ const programs = {
     image:
       "https://api.builder.io/api/v1/image/assets/TEMP/524c7d38c59612dcc131058ddfd229b02c7cbe1f?width=545",
     color: "from-green-500 to-teal-600",
-    price: 120,
     description:
       "Cognitive Math blends problem-solving, visual reasoning, and real-world scenarios to strengthen mathematical thinking rather than just memorizing facts. Drawing on research-based methods, our curriculum encourages students to use their experiences and reasoning skills to solve age-appropriate challenges—making math intuitive, relevant, and fun from kindergarten through Grade 5.",
     features: [
@@ -49,8 +47,8 @@ const programs = {
       "Age-appropriate mathematical challenges",
       "Intuitive and relevant math concepts",
     ],
-    ageRange: "1st and 2nd Grade",
-    duration: "60 min per week, 12-16 weeks",
+    ageRange: "1st - 5th Grade",
+    duration: "60 minutes per week",
     classSize: "1-5 students",
   },
   "english-literature-arts": {
@@ -59,7 +57,6 @@ const programs = {
     image:
       "https://api.builder.io/api/v1/image/assets/TEMP/11693bba33ed0a4d1a014c3849837105e2d30148?width=545",
     color: "from-orange-500 to-red-600",
-    price: 120,
     description:
       "Our English Literature & Arts program goes beyond basic grammar and spelling. Through storytelling, classic and contemporary literature, discussion, creative writing, and expressive arts, students develop deeper comprehension, vocabulary, and creative expression. Inspired by integrated ELA programs that bring together literary, nonfiction, and multimedia elements, this curriculum cultivates confident readers and compassionate thinkers.",
     features: [
@@ -70,8 +67,8 @@ const programs = {
       "Deeper comprehension development",
       "Vocabulary and creative expression enhancement",
     ],
-    ageRange: "1st and 2nd Grade",
-    duration: "60 min per week, 12-16 weeks",
+    ageRange: "1st and 7th Grade",
+    duration: "60 minutes per week",
     classSize: "1-5 students",
   },
   abacus: {
@@ -80,7 +77,6 @@ const programs = {
     image:
       "https://api.builder.io/api/v1/image/assets/TEMP/a05e4d70fe5d0f6a2529f37551feb54b6833df28?width=545",
     color: "from-purple-500 to-pink-600",
-    price: 120,
     description:
       "Abacus training develops powerful mental math skills by teaching students to visualize bead movements in their minds. This hands-on learning improves concentration, memory, processing speed, and spatial awareness. Students gain rapid calculation abilities, sharpened cognition, and boosted confidence—making math mastery more fun and effective than ever. Ideal for building a strong STEM foundation early on.",
     features: [
@@ -91,8 +87,8 @@ const programs = {
       "Spatial awareness development",
       "Strong STEM foundation building",
     ],
-    ageRange: "1st and 2nd Grade",
-    duration: "60 min per week, 16-20 weeks",
+    ageRange: "Kindergarten to 3rd Grade",
+    duration: "60 minutes per week",
     classSize: "1-5 students",
   },
 };
