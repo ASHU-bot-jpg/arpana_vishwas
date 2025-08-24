@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {
   ArrowLeft,
-  ShoppingCart,
   CheckCircle,
   Clock,
   Users,
@@ -121,22 +120,6 @@ export default function ProgramDetail() {
     );
   }
 
-  const addToCart = () => {
-    const cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
-    const existingItem = cartItems.find((item: any) => item.id === programId);
-
-    if (!existingItem) {
-      cartItems.push({
-        id: programId,
-        name: program.title,
-        price: program.price,
-      });
-      localStorage.setItem("cartItems", JSON.stringify(cartItems));
-      navigate("/cart");
-    } else {
-      alert("This program is already in your cart!");
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30">
@@ -190,26 +173,6 @@ export default function ProgramDetail() {
                 </p>
               </div>
 
-              {/* Price */}
-              <div className="bg-gradient-to-r from-icreative-green/10 to-green-400/10 border border-icreative-green/20 rounded-2xl p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-icreative-grey font-inter text-sm">
-                      Program Fee
-                    </p>
-                    <p className="text-icreative-purple font-roboto text-3xl font-bold">
-                      ${program.price}
-                    </p>
-                  </div>
-                  <button
-                    onClick={addToCart}
-                    className="bg-gradient-to-r from-icreative-green to-green-400 hover:from-icreative-magenta hover:to-purple-500 text-black hover:text-white px-6 py-3 rounded-2xl font-inter text-base font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center gap-2"
-                  >
-                    <ShoppingCart className="w-4 h-4" />
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
 
               {/* Program Info */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -243,20 +206,13 @@ export default function ProgramDetail() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex justify-center">
                 <Link
                   to="/register"
-                  className="flex-1 bg-gradient-to-r from-icreative-magenta to-purple-500 text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
+                  className="bg-gradient-to-r from-icreative-magenta to-purple-500 text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
                 >
                   Register Now
                 </Link>
-                <button
-                  onClick={addToCart}
-                  className="flex-1 border-2 border-icreative-purple text-icreative-purple hover:bg-icreative-purple hover:text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 inline-flex items-center justify-center gap-2"
-                >
-                  <ShoppingCart className="w-5 h-5" />
-                  Add to Cart
-                </button>
               </div>
             </div>
           </div>
@@ -296,20 +252,13 @@ export default function ProgramDetail() {
               Join our program and watch your child develop exceptional skills
               and confidence in learning.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Link
                 to="/register"
                 className="bg-white text-icreative-purple px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Schedule Free Assessment
               </Link>
-              <button
-                onClick={addToCart}
-                className="border-2 border-white text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-white hover:text-icreative-purple transition-all duration-300 inline-flex items-center justify-center gap-2"
-              >
-                <ShoppingCart className="w-5 h-5" />
-                Add to Cart - ${program.price}
-              </button>
             </div>
           </div>
         </div>
