@@ -206,13 +206,15 @@ export default function Header() {
             >
               Pay Fees
             </a>
-            <Link
-              to="/register"
+            <a
+              href="https://icreativelearning.com/registeration/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full bg-icreative-magenta text-white px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-icreative-magenta-dark transition-colors block text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Schedule Assessment
-            </Link>
+            </a>
           </div>
         </div>
       </div>
