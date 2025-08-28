@@ -84,8 +84,8 @@ export default function Cart() {
   };
 
   const handleCheckout = () => {
-    // Replace this URL with your actual WooCommerce checkout URL
-    const wooCommerceUrl = "https://your-woocommerce-site.com/checkout";
+    // Redirect to your actual WooCommerce shop URL
+    const wooCommerceUrl = "https://icreativelearning.com/shop/";
 
     // You can pass cart items as URL parameters or set up a proper integration
     const cartData = encodeURIComponent(JSON.stringify(cartItems));
