@@ -132,13 +132,15 @@ export default function CoreOfferings() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link
-                to="/register"
+              <a
+                href="https://icreativelearning.com/registeration/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-gradient-to-r from-icreative-green to-green-400 hover:from-icreative-magenta hover:to-purple-500 text-black hover:text-white px-8 py-4 rounded-2xl font-inter text-base lg:text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center justify-center gap-2"
               >
                 Register Now
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
+              </a>
 
               <Link
                 to="/programs"
