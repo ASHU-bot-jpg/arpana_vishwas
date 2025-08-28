@@ -148,7 +148,7 @@ export default function About() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-icreative-green rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-black font-bold text-sm">���</span>
+                  <span className="text-black font-bold text-sm">✓</span>
                 </div>
                 <div>
                   <h4 className="text-icreative-purple font-roboto text-lg font-bold mb-2">
