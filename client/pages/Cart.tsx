@@ -72,7 +72,6 @@ export default function Cart() {
     }
   }, []);
 
-
   const removeItem = (itemId: string) => {
     const updatedItems = cartItems.filter((item) => item.id !== itemId);
     setCartItems(updatedItems);
