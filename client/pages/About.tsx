@@ -148,7 +148,7 @@ export default function About() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-icreative-green rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-black font-bold text-sm">✓</span>
+                  <span className="text-black font-bold text-sm">���</span>
                 </div>
                 <div>
                   <h4 className="text-icreative-purple font-roboto text-lg font-bold mb-2">
@@ -319,12 +319,14 @@ export default function About() {
               Join our community of successful learners and watch your child's
               confidence and abilities soar.
             </p>
-            <Link
-              to="/register"
+            <a
+              href="https://icreativelearning.com/registeration/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-icreative-green text-black px-8 py-4 rounded-3xl font-inter text-base font-bold hover:bg-green-400 transition-colors inline-block"
             >
               Book Your Free Assessment
-            </Link>
+            </a>
           </section>
         </div>
       </main>
