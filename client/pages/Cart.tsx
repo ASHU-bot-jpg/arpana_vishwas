@@ -72,17 +72,6 @@ export default function Cart() {
     }
   }, []);
 
-  const addOfferToCart = (offer: (typeof specialOffers)[0]) => {
-    const newItem = {
-      id: offer.id,
-      name: offer.title,
-      price: offer.salePrice,
-    };
-
-    const updatedItems = [...cartItems, newItem];
-    setCartItems(updatedItems);
-    localStorage.setItem("cartItems", JSON.stringify(updatedItems));
-  };
 
   const removeItem = (itemId: string) => {
     const updatedItems = cartItems.filter((item) => item.id !== itemId);
