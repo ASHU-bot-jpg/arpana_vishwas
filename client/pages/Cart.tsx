@@ -304,7 +304,7 @@ export default function Cart() {
               <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
                 <p className="text-yellow-800 text-sm">
                   <strong>Note:</strong> This will redirect you to our secure
-                  payment portal powered by WooCommerce. You can pay using
+                  payment portal at icreativelearning.com. You can pay using
                   credit card, PayPal, or other available payment methods.
                 </p>
               </div>
