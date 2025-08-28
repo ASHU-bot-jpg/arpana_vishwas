@@ -226,12 +226,14 @@ export default function Cart() {
 
                       {/* Add to Cart Button */}
                       <div className="p-6 bg-white">
-                        <button
-                          onClick={() => addOfferToCart(offer)}
-                          className="w-full bg-gradient-to-r from-icreative-purple to-icreative-magenta hover:from-icreative-magenta hover:to-purple-600 text-white px-6 py-3 rounded-2xl font-inter text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+                        <a
+                          href="https://icreativelearning.com/shop/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full bg-gradient-to-r from-icreative-purple to-icreative-magenta hover:from-icreative-magenta hover:to-purple-600 text-white px-6 py-3 rounded-2xl font-inter text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 inline-block text-center"
                         >
                           ADD TO CART
-                        </button>
+                        </a>
                       </div>
                     </div>
                   ))}
