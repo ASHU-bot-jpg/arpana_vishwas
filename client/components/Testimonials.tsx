@@ -155,7 +155,7 @@ export default function Testimonials() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://icreativelearning.com/registeration/"
+                href="/register"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-icreative-purple px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"

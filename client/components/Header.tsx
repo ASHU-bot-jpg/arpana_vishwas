@@ -107,16 +107,14 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-2 lg:gap-3">
           <a
             href="https://icreativelearning.com/cart/"
-            target="_blank"
-            rel="noopener noreferrer"
+            
             className="bg-icreative-green text-black px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-green-400 transition-colors whitespace-nowrap"
           >
             Pay Fees
           </a>
           <a
             href="/register"
-            target="_blank"
-            rel="noopener noreferrer"
+            
             className="bg-icreative-magenta text-white px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-icreative-magenta-dark transition-colors whitespace-nowrap"
           >
             Schedule Assessment
@@ -199,8 +197,7 @@ export default function Header() {
           <div className="space-y-2 pt-2 border-t border-white/20">
             <a
               href="https://icreativelearning.com/cart/"
-              target="_blank"
-              rel="noopener noreferrer"
+              
               className="w-full bg-icreative-green text-black px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-green-400 transition-colors block text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -208,8 +205,7 @@ export default function Header() {
             </a>
             <a
               href="/register"
-              target="_blank"
-              rel="noopener noreferrer"
+              
               className="w-full bg-icreative-magenta text-white px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-icreative-magenta-dark transition-colors block text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
