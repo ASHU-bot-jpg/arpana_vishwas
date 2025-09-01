@@ -10,7 +10,7 @@
 
 ## 🎯 **IMMEDIATE ACTION REQUIRED**
 
-### **Step 1: Fix Your WordPress Site FIRST** 
+### **Step 1: Fix Your WordPress Site FIRST**
 
 Before fixing DNS, your WordPress site must be accessible:
 
@@ -24,16 +24,19 @@ Before fixing DNS, your WordPress site must be accessible:
 You have 3 options:
 
 #### **Option A: Keep WordPress + Netlify Separate** (Recommended)
-- **WordPress site**: `icreativelearning.com` (for registrations/shop)  
+
+- **WordPress site**: `icreativelearning.com` (for registrations/shop)
 - **React app**: `app.icreativelearning.com` or `learn.icreativelearning.com`
 - **Advantage**: Both sites work independently
 
 #### **Option B: Replace WordPress with Netlify**
-- **Netlify takes over**: `icreativelearning.com` 
+
+- **Netlify takes over**: `icreativelearning.com`
 - **WordPress becomes**: `old.icreativelearning.com`
 - **Risk**: Lose current WordPress content
 
 #### **Option C: Keep Current Setup**
+
 - **Fix WordPress first**, then adjust DNS
 - **Keep external links** to WordPress for registration
 
@@ -42,6 +45,7 @@ You have 3 options:
 ## 🔧 **DNS Configuration Fix**
 
 ### **Current Problem:**
+
 You set Netlify DNS records in GoDaddy, but this creates conflicts.
 
 ### **CORRECT Method:**
@@ -49,12 +53,13 @@ You set Netlify DNS records in GoDaddy, but this creates conflicts.
 #### **If using Option A (Recommended):**
 
 **In GoDaddy DNS:**
+
 ```
 Type: A
 Name: @
 Value: [Your WordPress hosting IP]
 
-Type: A  
+Type: A
 Name: app (or learn)
 Value: 75.2.60.5 (Netlify IP)
 
@@ -66,12 +71,13 @@ Value: icreativelearning.com
 #### **If using Option B (Replace WordPress):**
 
 **In GoDaddy DNS:**
+
 ```
 Type: A
 Name: @
 Value: 75.2.60.5
 
-Type: CNAME  
+Type: CNAME
 Name: www
 Value: your-netlify-site.netlify.app
 ```
@@ -85,15 +91,16 @@ Value: your-netlify-site.netlify.app
 **Check these immediately:**
 
 - [ ] **Hosting account status** - Is it suspended/expired?
-- [ ] **Domain registration** - Is icreativelearning.com expired? 
+- [ ] **Domain registration** - Is icreativelearning.com expired?
 - [ ] **WordPress hosting** - Is the hosting service down?
 - [ ] **DNS propagation** - Use dnschecker.org
 
-### **2. Temporary App Fix** 
+### **2. Temporary App Fix**
 
 While fixing WordPress, update your React app links:
 
 **Replace broken external links with:**
+
 - Registration: Link to `/register` (your internal form)
 - Pay Fees: Link to `/cart` (your internal cart)
 - Contact: Use `mailto:info@iCreativeLearning.com`
@@ -101,6 +108,7 @@ While fixing WordPress, update your React app links:
 ### **3. Hosting Provider Check**
 
 **Find out who hosts icreativelearning.com:**
+
 1. Use whois lookup: `whois icreativelearning.com`
 2. Contact that hosting provider directly
 3. Check if account is active and paid
@@ -110,16 +118,19 @@ While fixing WordPress, update your React app links:
 ## 📞 **Who to Contact:**
 
 ### **WordPress Site Down:**
+
 1. **Your WordPress hosting provider** (NOT GoDaddy if they only have domain)
 2. **Check hosting control panel** for service status
 3. **Look for suspension/expiration notices**
 
 ### **Domain Issues:**
+
 1. **GoDaddy support** (domain registrar)
 2. **Verify domain renewal status**
 3. **Check DNS management settings**
 
 ### **DNS Propagation:**
+
 - **Wait 24-48 hours** after DNS changes
 - **Use DNS checker**: https://dnschecker.org
 - **Clear browser cache**: Hard refresh (Ctrl+F5)
@@ -141,7 +152,7 @@ While fixing WordPress, update your React app links:
 
 ## 🎯 **Next Steps Priority:**
 
-1. ✅ **FIRST**: Fix WordPress site accessibility  
+1. ✅ **FIRST**: Fix WordPress site accessibility
 2. ✅ **SECOND**: Choose domain strategy (A, B, or C)
 3. ✅ **THIRD**: Configure DNS correctly
 4. ✅ **FOURTH**: Test all links and functionality
