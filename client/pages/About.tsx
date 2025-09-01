@@ -320,7 +320,7 @@ export default function About() {
               confidence and abilities soar.
             </p>
             <a
-              href="https://icreativelearning.com/registeration/"
+              href="/register"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-icreative-green text-black px-8 py-4 rounded-3xl font-inter text-base font-bold hover:bg-green-400 transition-colors inline-block"
