@@ -199,7 +199,7 @@ export default function ProgramDetail() {
               {/* CTA Buttons */}
               <div className="flex justify-center">
                 <a
-                  href="https://icreativelearning.com/registeration/"
+                  href="/register"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-icreative-magenta to-purple-500 text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
@@ -247,7 +247,7 @@ export default function ProgramDetail() {
             </p>
             <div className="flex justify-center">
               <a
-                href="https://icreativelearning.com/registeration/"
+                href="/register"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-icreative-purple px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
