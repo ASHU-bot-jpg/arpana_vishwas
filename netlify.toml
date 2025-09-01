@@ -5,6 +5,18 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Static pages should be served as-is
+[[redirects]]
+  from = "/registeration/"
+  to = "/registeration/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/cart/"
+  to = "/cart/index.html"
+  status = 200
+
+# All other routes go to React app
 [[redirects]]
   from = "/*"
   to = "/index.html"
