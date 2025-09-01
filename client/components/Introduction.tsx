@@ -40,7 +40,7 @@ export default function Introduction() {
             {/* Main Content */}
             <div className="space-y-6">
               <h2 className="text-icreative-purple font-roboto text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight">
-                Blending Creativity with{" "}
+                Blending Creativity with&nbsp;
                 <span className="bg-gradient-to-r from-icreative-magenta to-icreative-purple bg-clip-text text-transparent">
                   Curriculum
                 </span>
