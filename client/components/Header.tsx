@@ -114,7 +114,6 @@ export default function Header() {
           </a>
           <a
             href="https://icreativelearning.com/registeration/"
-            target="_blank"
             rel="noopener noreferrer"
             className="bg-icreative-magenta text-white px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-icreative-magenta-dark transition-colors whitespace-nowrap"
           >
