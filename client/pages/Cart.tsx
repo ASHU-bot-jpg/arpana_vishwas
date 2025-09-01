@@ -84,7 +84,7 @@ export default function Cart() {
 
   const handleCheckout = () => {
     // Redirect to your actual WooCommerce shop URL
-    const wooCommerceUrl = "https://icreativelearning.com/shop/";
+    const wooCommerceUrl = "https://icreativelearning.com/cart/";
 
     // You can pass cart items as URL parameters or set up a proper integration
     const cartData = encodeURIComponent(JSON.stringify(cartItems));
@@ -215,7 +215,7 @@ export default function Cart() {
                       {/* Add to Cart Button */}
                       <div className="p-6 bg-white">
                         <a
-                          href="https://icreativelearning.com/shop/"
+                          href="https://icreativelearning.com/cart/"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-full bg-gradient-to-r from-icreative-purple to-icreative-magenta hover:from-icreative-magenta hover:to-purple-600 text-white px-6 py-3 rounded-2xl font-inter text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 inline-block text-center"
