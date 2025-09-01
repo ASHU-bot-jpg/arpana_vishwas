@@ -147,6 +147,7 @@ export default function WhyChooseUs() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://icreativelearning.com/registeration/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-gradient-to-r from-icreative-green to-green-400 hover:from-icreative-magenta hover:to-purple-500 text-black hover:text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
