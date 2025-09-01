@@ -196,8 +196,7 @@ export default function Header() {
           {/* Mobile CTA Buttons */}
           <div className="space-y-2 pt-2 border-t border-white/20">
             <a
-              href="https://icreativelearning.com/cart/"
-              target="_blank"
+              href="https://icreativelearning.com/shop/"
               rel="noopener noreferrer"
               className="w-full bg-icreative-green text-black px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-green-400 transition-colors block text-center"
               onClick={() => setIsMobileMenuOpen(false)}
