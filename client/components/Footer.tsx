@@ -23,31 +23,31 @@ export default function Footer() {
               </h3>
               <div className="space-y-3">
                 <a
-                  href="#"
+                  href="/program/cognitive-math"
                   className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors"
                 >
                   Creative Math
                 </a>
                 <a
-                  href="#"
+                  href="/program/abacus"
                   className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors"
                 >
                   Abacus
                 </a>
                 <a
-                  href="#"
+                  href="/program/english-literature-arts"
                   className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors"
                 >
                   Language Arts
                 </a>
                 <a
-                  href="#"
+                  href="/programs"
                   className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors"
                 >
                   Summer Camps
                 </a>
                 <a
-                  href="#"
+                  href="/program/cogat"
                   className="block text-icreative-text-tertiary font-roboto text-sm hover:text-icreative-purple transition-colors"
                 >
                   CogAT
