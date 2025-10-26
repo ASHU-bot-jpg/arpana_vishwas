@@ -244,14 +244,12 @@ export default function ProgramDetail() {
               and confidence in learning.
             </p>
             <div className="flex justify-center">
-              <a
-                href="https://icreativelearning.com/registeration/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-icreative-purple px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              <Link
+                to="/register"
+                className="bg-white text-icreative-purple px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block"
               >
                 Schedule Free Assessment
-              </a>
+              </Link>
             </div>
           </div>
         </div>
