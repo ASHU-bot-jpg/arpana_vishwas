@@ -133,6 +133,33 @@ async function sendEmailNotification(registration: any) {
 
   console.log("Email to be sent to info@icreativelearning.com:", emailContent);
 
+  // Send data to Google Sheets via Apps Script
+  try {
+    const googleSheetUrl = process.env.GOOGLE_SHEET_WEBHOOK_URL;
+    if (googleSheetUrl) {
+      await fetch(googleSheetUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          parentName: registration.parentName,
+          emailAddress: registration.emailAddress,
+          phoneNumber: registration.phoneNumber,
+          childName: registration.childName,
+          childGrade: registration.childGrade,
+          selectedPrograms: registration.selectedPrograms.join(", "),
+          hearAboutUs: registration.hearAboutUs,
+          submittedAt: registration.submittedAt,
+        }),
+      });
+      console.log("Data sent to Google Sheets");
+    }
+  } catch (error) {
+    console.error("Error sending to Google Sheets:", error);
+  }
+
   // Here you would integrate with an email service like:
   // - Nodemailer with SMTP
   // - SendGrid
