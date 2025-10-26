@@ -113,14 +113,12 @@ export default function Header() {
           >
             Pay Fees
           </a>
-          <a
-            href="https://icreativelearning.com/registeration/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/register"
             className="bg-icreative-magenta text-white px-3 lg:px-4 py-2 rounded-lg font-inter text-sm lg:text-base hover:bg-icreative-magenta-dark transition-colors whitespace-nowrap"
           >
             Schedule Assessment
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Menu Button */}
@@ -206,15 +204,13 @@ export default function Header() {
             >
               Pay Fees
             </a>
-            <a
-              href="https://icreativelearning.com/registeration/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/register"
               className="w-full bg-icreative-magenta text-white px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-icreative-magenta-dark transition-colors block text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Schedule Assessment
-            </a>
+            </Link>
           </div>
         </div>
       </div>
