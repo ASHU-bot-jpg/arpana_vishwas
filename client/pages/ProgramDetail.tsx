@@ -198,13 +198,12 @@ export default function ProgramDetail() {
 
               {/* CTA Buttons */}
               <div className="flex justify-center">
-                <a
-                  href="https://icreativelearning.com/registeration/"
-                  rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-icreative-magenta to-purple-500 text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
+                <Link
+                  to="/register"
+                  className="bg-gradient-to-r from-icreative-magenta to-purple-500 text-white px-8 py-4 rounded-2xl font-inter text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center inline-block"
                 >
                   Register Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
