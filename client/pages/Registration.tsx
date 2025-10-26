@@ -112,14 +112,23 @@ export default function Registration() {
     <div className="min-h-screen" style={{ background: "#F0E2F2" }}>
       <Header />
 
-      <main className="py-8 px-6">
+      <main className="py-12 px-6 lg:px-20">
         <div className="max-w-4xl mx-auto">
+          {/* Logo Section */}
+          <div className="text-center mb-12">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/d39d1a44c601b6f86affe2855a69fde28f72777c?width=200"
+              alt="iCreative Learning Logo"
+              className="h-16 w-auto mx-auto mb-8"
+            />
+          </div>
+
           {/* Page Title */}
-          <div className="text-center mb-8">
-            <h1 className="text-icreative-purple font-roboto text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">
+          <div className="text-center mb-12">
+            <h1 className="text-icreative-purple font-roboto text-4xl lg:text-5xl font-bold mb-4">
               Registration
             </h1>
-            <p className="text-black font-roboto text-lg lg:text-2xl max-w-4xl mx-auto">
+            <p className="text-black font-roboto text-base lg:text-lg max-w-4xl mx-auto leading-relaxed">
               Register here to receive iCreative Learning Program Curriculum and
               Demo Class
             </p>
@@ -127,71 +136,11 @@ export default function Registration() {
 
           {/* Registration Form */}
           <form onSubmit={handleSubmit} className="space-y-6 bg-transparent">
-            {/* Child's Name */}
-            <div className="space-y-2">
-              <label
-                htmlFor="childName"
-                className="block text-black font-roboto text-xl lg:text-2xl"
-              >
-                Child's Name?
-              </label>
-              <input
-                type="text"
-                id="childName"
-                name="childName"
-                value={formData.childName}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 text-black font-roboto text-lg lg:text-xl bg-icreative-pink border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
-                placeholder="Text Here"
-              />
-            </div>
-
-            {/* Phone Number */}
-            <div className="space-y-2">
-              <label
-                htmlFor="phoneNumber"
-                className="block text-black font-roboto text-xl lg:text-2xl"
-              >
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                id="phoneNumber"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 text-black font-roboto text-lg lg:text-xl bg-icreative-pink border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
-                placeholder="Text Here"
-              />
-            </div>
-
-            {/* Email Address */}
-            <div className="space-y-2">
-              <label
-                htmlFor="emailAddress"
-                className="block text-black font-roboto text-xl lg:text-2xl"
-              >
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="emailAddress"
-                name="emailAddress"
-                value={formData.emailAddress}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 text-black font-roboto text-lg lg:text-xl bg-icreative-pink border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
-                placeholder="Text Here"
-              />
-            </div>
-
             {/* Parent's Full Name */}
             <div className="space-y-2">
               <label
                 htmlFor="parentName"
-                className="block text-black font-roboto text-xl lg:text-2xl"
+                className="block text-black font-roboto text-base lg:text-lg font-medium"
               >
                 Parent's Full Name
               </label>
@@ -202,7 +151,67 @@ export default function Registration() {
                 value={formData.parentName}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-lg lg:text-xl bg-icreative-pink border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                placeholder="Text Here"
+              />
+            </div>
+
+            {/* Email Address */}
+            <div className="space-y-2">
+              <label
+                htmlFor="emailAddress"
+                className="block text-black font-roboto text-base lg:text-lg font-medium"
+              >
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                value={formData.emailAddress}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                placeholder="Text Here"
+              />
+            </div>
+
+            {/* Phone Number */}
+            <div className="space-y-2">
+              <label
+                htmlFor="phoneNumber"
+                className="block text-black font-roboto text-base lg:text-lg font-medium"
+              >
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                placeholder="Text Here"
+              />
+            </div>
+
+            {/* Child's Name */}
+            <div className="space-y-2">
+              <label
+                htmlFor="childName"
+                className="block text-black font-roboto text-base lg:text-lg font-medium"
+              >
+                Child's Name
+              </label>
+              <input
+                type="text"
+                id="childName"
+                name="childName"
+                value={formData.childName}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
                 placeholder="Text Here"
               />
             </div>
@@ -211,9 +220,9 @@ export default function Registration() {
             <div className="space-y-2">
               <label
                 htmlFor="childGrade"
-                className="block text-black font-roboto text-xl lg:text-2xl"
+                className="block text-black font-roboto text-base lg:text-lg font-medium"
               >
-                Child's Grade?
+                Child's Grade
               </label>
               <input
                 type="text"
@@ -222,14 +231,14 @@ export default function Registration() {
                 value={formData.childGrade}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-lg lg:text-xl bg-icreative-pink border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
                 placeholder="Text Here"
               />
             </div>
 
             {/* Program Selection */}
             <div className="space-y-4">
-              <h3 className="text-black font-roboto text-xl lg:text-2xl">
+              <h3 className="text-black font-roboto text-base lg:text-lg font-medium">
                 Select the program?
               </h3>
               <div className="space-y-3">
@@ -242,9 +251,9 @@ export default function Registration() {
                       type="checkbox"
                       checked={formData.selectedPrograms.includes(program.id)}
                       onChange={() => handleProgramChange(program.id)}
-                      className="w-7 h-7 rounded border border-black focus:ring-2 focus:ring-icreative-purple"
+                      className="w-5 h-5 border-2 border-gray-400 rounded cursor-pointer focus:ring-2 focus:ring-icreative-purple"
                     />
-                    <span className="text-black font-roboto text-lg lg:text-xl">
+                    <span className="text-black font-roboto text-base lg:text-lg">
                       {program.name}
                     </span>
                   </label>
@@ -256,7 +265,7 @@ export default function Registration() {
             <div className="space-y-2">
               <label
                 htmlFor="hearAboutUs"
-                className="block text-black font-roboto text-xl lg:text-2xl"
+                className="block text-black font-roboto text-base lg:text-lg font-medium"
               >
                 How Did you hear about us?
               </label>
@@ -266,7 +275,7 @@ export default function Registration() {
                 value={formData.hearAboutUs}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-lg lg:text-xl bg-white border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-base bg-white border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
               >
                 <option value="">Select an option</option>
                 {hearAboutOptions.map((option) => (
@@ -278,8 +287,8 @@ export default function Registration() {
             </div>
 
             {/* Privacy Notice */}
-            <div className="bg-white/20 p-6 rounded-lg">
-              <p className="text-black font-roboto text-lg lg:text-xl leading-relaxed">
+            <div className="bg-white/40 p-6 rounded-lg border border-gray-300">
+              <p className="text-black font-roboto text-sm lg:text-base leading-relaxed">
                 By submitting your information, you're giving us permission to
                 email you. You may unsubscribe at any time.
               </p>
@@ -290,7 +299,7 @@ export default function Registration() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-icreative-green text-black px-8 py-4 rounded-2xl font-inter text-lg font-bold hover:bg-green-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-icreative-green text-black px-8 py-3 rounded-lg font-roboto text-base font-bold hover:bg-green-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Registering..." : "Register"}
               </button>
