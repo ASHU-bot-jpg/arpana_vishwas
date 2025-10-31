@@ -115,20 +115,20 @@ export default function Registration() {
       <main className="py-12 lg:py-16 px-6 lg:px-20">
         <div className="max-w-3xl mx-auto">
           {/* Logo Section */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 lg:mb-12">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/d39d1a44c601b6f86affe2855a69fde28f72777c?width=200"
               alt="iCreative Learning Logo"
-              className="h-16 w-auto mx-auto mb-8"
+              className="h-14 lg:h-16 w-auto mx-auto mb-6 lg:mb-8"
             />
           </div>
 
           {/* Page Title */}
-          <div className="text-center mb-12">
-            <h1 className="text-icreative-purple font-roboto text-4xl lg:text-5xl font-bold mb-4">
+          <div className="text-center mb-8 lg:mb-12">
+            <h1 className="text-icreative-purple font-roboto text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 lg:mb-4">
               Registration
             </h1>
-            <p className="text-black font-roboto text-base lg:text-lg max-w-4xl mx-auto leading-relaxed">
+            <p className="text-black font-roboto text-sm lg:text-base xl:text-lg max-w-3xl mx-auto leading-relaxed">
               Register here to receive iCreative Learning Program Curriculum and
               Demo Class
             </p>
