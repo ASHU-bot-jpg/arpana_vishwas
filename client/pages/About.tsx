@@ -319,14 +319,12 @@ export default function About() {
               Join our community of successful learners and watch your child's
               confidence and abilities soar.
             </p>
-            <a
-              href="https://icreativelearning.com/registeration/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/register"
               className="bg-icreative-green text-black px-8 py-4 rounded-3xl font-inter text-base font-bold hover:bg-green-400 transition-colors inline-block"
             >
               Book Your Free Assessment
-            </a>
+            </Link>
           </section>
         </div>
       </main>
