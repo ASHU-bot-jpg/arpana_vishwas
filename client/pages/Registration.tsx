@@ -140,7 +140,7 @@ export default function Registration() {
             <div className="space-y-2">
               <label
                 htmlFor="parentName"
-                className="block text-black font-roboto text-base lg:text-lg font-medium"
+                className="block text-black font-roboto text-sm lg:text-base font-medium"
               >
                 Parent's Full Name
               </label>
@@ -151,7 +151,7 @@ export default function Registration() {
                 value={formData.parentName}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-sm lg:text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
                 placeholder="Text Here"
               />
             </div>
@@ -160,7 +160,7 @@ export default function Registration() {
             <div className="space-y-2">
               <label
                 htmlFor="emailAddress"
-                className="block text-black font-roboto text-base lg:text-lg font-medium"
+                className="block text-black font-roboto text-sm lg:text-base font-medium"
               >
                 Email Address
               </label>
@@ -171,7 +171,7 @@ export default function Registration() {
                 value={formData.emailAddress}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-sm lg:text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
                 placeholder="Text Here"
               />
             </div>
@@ -180,7 +180,7 @@ export default function Registration() {
             <div className="space-y-2">
               <label
                 htmlFor="phoneNumber"
-                className="block text-black font-roboto text-base lg:text-lg font-medium"
+                className="block text-black font-roboto text-sm lg:text-base font-medium"
               >
                 Phone Number
               </label>
@@ -191,7 +191,7 @@ export default function Registration() {
                 value={formData.phoneNumber}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-sm lg:text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
                 placeholder="Text Here"
               />
             </div>
@@ -200,7 +200,7 @@ export default function Registration() {
             <div className="space-y-2">
               <label
                 htmlFor="childName"
-                className="block text-black font-roboto text-base lg:text-lg font-medium"
+                className="block text-black font-roboto text-sm lg:text-base font-medium"
               >
                 Child's Name
               </label>
@@ -211,7 +211,7 @@ export default function Registration() {
                 value={formData.childName}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-sm lg:text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
                 placeholder="Text Here"
               />
             </div>
@@ -220,7 +220,7 @@ export default function Registration() {
             <div className="space-y-2">
               <label
                 htmlFor="childGrade"
-                className="block text-black font-roboto text-base lg:text-lg font-medium"
+                className="block text-black font-roboto text-sm lg:text-base font-medium"
               >
                 Child's Grade
               </label>
@@ -231,14 +231,14 @@ export default function Registration() {
                 value={formData.childGrade}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-sm lg:text-base border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
                 placeholder="Text Here"
               />
             </div>
 
             {/* Program Selection */}
             <div className="space-y-4">
-              <h3 className="text-black font-roboto text-base lg:text-lg font-medium">
+              <h3 className="text-black font-roboto text-sm lg:text-base font-medium">
                 Select the program?
               </h3>
               <div className="space-y-3">
@@ -253,7 +253,7 @@ export default function Registration() {
                       onChange={() => handleProgramChange(program.id)}
                       className="w-5 h-5 border-2 border-gray-400 rounded cursor-pointer focus:ring-2 focus:ring-icreative-purple"
                     />
-                    <span className="text-black font-roboto text-base lg:text-lg">
+                    <span className="text-black font-roboto text-sm lg:text-base">
                       {program.name}
                     </span>
                   </label>
@@ -265,7 +265,7 @@ export default function Registration() {
             <div className="space-y-2">
               <label
                 htmlFor="hearAboutUs"
-                className="block text-black font-roboto text-base lg:text-lg font-medium"
+                className="block text-black font-roboto text-sm lg:text-base font-medium"
               >
                 How Did you hear about us?
               </label>
@@ -275,7 +275,7 @@ export default function Registration() {
                 value={formData.hearAboutUs}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 text-black font-roboto text-base bg-white border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
+                className="w-full px-4 py-3 text-black font-roboto text-sm lg:text-base bg-white border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-icreative-purple"
               >
                 <option value="">Select an option</option>
                 {hearAboutOptions.map((option) => (
@@ -288,7 +288,7 @@ export default function Registration() {
 
             {/* Privacy Notice */}
             <div className="bg-white/40 p-6 rounded-lg border border-gray-300">
-              <p className="text-black font-roboto text-sm lg:text-base leading-relaxed">
+              <p className="text-black font-roboto text-xs lg:text-sm leading-relaxed">
                 By submitting your information, you're giving us permission to
                 email you. You may unsubscribe at any time.
               </p>
@@ -299,7 +299,7 @@ export default function Registration() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-icreative-green text-black px-8 py-3 rounded-lg font-roboto text-base font-bold hover:bg-green-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-icreative-green text-black px-8 py-3 rounded-lg font-roboto text-sm lg:text-base font-bold hover:bg-green-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Registering..." : "Register"}
               </button>
