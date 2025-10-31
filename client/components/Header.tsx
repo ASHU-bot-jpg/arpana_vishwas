@@ -193,15 +193,13 @@ export default function Header() {
 
           {/* Mobile CTA Buttons */}
           <div className="space-y-2 pt-2 border-t border-white/20">
-            <a
+            <div
               rel="noopener noreferrer"
-              href="https://icreativelearning.com/shop/"
-              target="_blank"
               className="w-full bg-icreative-green text-black px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-green-400 transition-colors block text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Pay Fees
-            </a>
+            </div>
             <Link
               to="/register"
               className="w-full bg-icreative-magenta text-white px-4 py-3 rounded-lg font-inter text-sm font-medium hover:bg-icreative-magenta-dark transition-colors block text-center"
