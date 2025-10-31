@@ -16,6 +16,12 @@
   to = "/cart/index.html"
   status = 200
 
+# API routes should not be redirected
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
 # All other routes go to React app
 [[redirects]]
   from = "/*"
