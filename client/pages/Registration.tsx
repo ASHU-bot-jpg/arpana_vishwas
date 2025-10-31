@@ -109,11 +109,11 @@ export default function Registration() {
   };
 
   return (
-    <div className="min-h-screen" style={{ background: "#F0E2F2" }}>
+    <div className="min-h-screen bg-icreative-pink-light scroll-smooth">
       <Header />
 
-      <main className="py-12 px-6 lg:px-20">
-        <div className="max-w-4xl mx-auto">
+      <main className="py-12 lg:py-16 px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto">
           {/* Logo Section */}
           <div className="text-center mb-12">
             <img
